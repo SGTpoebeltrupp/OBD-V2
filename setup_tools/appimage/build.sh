@@ -14,7 +14,7 @@ PYTHON_STDLIB="$(dirname "$PYTHON_BIN")/../lib/python${PYTHON_VER}"
 echo "=== Build AppImage ==="
 echo "Version:   $VERSION"
 echo "Python:    $PYTHON_BIN ($PYTHON_VER)"
-echo "Output:    ddt4all-${VERSION}-x86_64.AppImage"
+echo "Output:    obd_v2-${VERSION}-x86_64.AppImage"
 
 rm -rf "$APPDIR" "$TOOLSDIR"
 mkdir -p "$APPDIR/usr/bin" "$APPDIR/usr/lib" \
@@ -43,25 +43,25 @@ for item in "$STDLIB"/*; do
   fi
 done
 
-# --- Installer ddt4all (écrase l'édition éditable du venv) ---
+# --- Installer obd_v2 (écrase l'édition éditable du venv) ---
 pip install --upgrade --no-deps --force-reinstall --target "$APPDIR/usr/lib/python${PYTHON_VER}/site-packages" .
 
 # --- Icône ---
-cp resources/icons/obd.png "$APPDIR/usr/share/icons/hicolor/256x256/apps/ddt4all.png"
-cp "$APPDIR/usr/share/icons/hicolor/256x256/apps/ddt4all.png" "$APPDIR/ddt4all.png"
+cp resources/icons/obd.png "$APPDIR/usr/share/icons/hicolor/256x256/apps/obd_v2.png"
+cp "$APPDIR/usr/share/icons/hicolor/256x256/apps/obd_v2.png" "$APPDIR/obd_v2.png"
 
 # --- Desktop file ---
-cat > "$APPDIR/usr/share/applications/ddt4all.desktop" << EOF
+cat > "$APPDIR/usr/share/applications/obd_v2.desktop" << EOF
 [Desktop Entry]
-Name=DDT4All
+Name=OBD-V2
 Comment=CAN bus ECU diagnostic tool
 Categories=Development;Electronics;
-Exec=ddt4all
-Icon=ddt4all
+Exec=obd_v2
+Icon=obd_v2
 Type=Application
 Terminal=false
 EOF
-cp "$APPDIR/usr/share/applications/ddt4all.desktop" "$APPDIR/"
+cp "$APPDIR/usr/share/applications/obd_v2.desktop" "$APPDIR/"
 
 # --- AppRun ---
 cat > "$APPDIR/AppRun" << APPRUN
@@ -74,8 +74,8 @@ export PYTHONHOME="\$APPDIR/usr"
 export PYTHONPATH="\$APPDIR/usr/lib/python${PYTHON_VER}/site-packages"
 export QT_QPA_PLATFORM=xcb
 export QT_PLUGIN_PATH="\$APPDIR/usr/plugins"
-export QTWEBENGINE_CHROMIUM_FLAGS="--disk-cache-dir=\$HOME/.cache/ddt4all"
-exec "\$APPDIR/usr/bin/python3" -m ddt4all "\$@"
+export QTWEBENGINE_CHROMIUM_FLAGS="--disk-cache-dir=\$HOME/.cache/obd_v2"
+exec "\$APPDIR/usr/bin/python3" -m obd_v2 "\$@"
 APPRUN
 chmod +x "$APPDIR/AppRun"
 
@@ -139,12 +139,12 @@ LD_LIBRARY_PATH="" "$LDA" --appdir "$APPDIR" --plugin qt 2>&1 || {
 # --- Créer l'AppImage ---
 echo "=== Creating AppImage ==="
 if [ -x "$TOOLSDIR/appimagetool-x86_64/AppRun" ]; then
-  ARCH=x86_64 "$TOOLSDIR/appimagetool-x86_64/AppRun" "$APPDIR" "$ROOT/ddt4all-${VERSION}-x86_64.AppImage"
+  ARCH=x86_64 "$TOOLSDIR/appimagetool-x86_64/AppRun" "$APPDIR" "$ROOT/obd_v2-${VERSION}-x86_64.AppImage"
 else
-  cd "$TOOLSDIR" && ARCH=x86_64 ./appimagetool-x86_64.AppImage --appimage-extract-and-run "$APPDIR" "$ROOT/ddt4all-${VERSION}-x86_64.AppImage"
+  cd "$TOOLSDIR" && ARCH=x86_64 ./appimagetool-x86_64.AppImage --appimage-extract-and-run "$APPDIR" "$ROOT/obd_v2-${VERSION}-x86_64.AppImage"
   cd "$ROOT"
 fi
 
 echo ""
-echo "=== Done: ddt4all-${VERSION}-x86_64.AppImage ==="
-ls -lh "ddt4all-${VERSION}-x86_64.AppImage"
+echo "=== Done: obd_v2-${VERSION}-x86_64.AppImage ==="
+ls -lh "obd_v2-${VERSION}-x86_64.AppImage"

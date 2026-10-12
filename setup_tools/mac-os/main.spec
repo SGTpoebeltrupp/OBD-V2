@@ -1,6 +1,6 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-# DDT4ALL PyInstaller specification for macOS
+# OBD-V2 PyInstaller specification for macOS
 # Supports both Intel and Apple Silicon (M1/M2) architectures
 
 import os
@@ -11,7 +11,7 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..
 sys.path.insert(0, project_root)
 
 # Core application files
-main_script = os.path.join(project_root, 'src', 'ddt4all', 'main.py')
+main_script = os.path.join(project_root, 'src', 'obd_v2', 'main.py')
 
 # Data files to include
 datas = [
@@ -22,7 +22,7 @@ datas = [
     (os.path.join(project_root, 'locales'), 'locales'),
     
     # Plugin files
-    (os.path.join(project_root, 'src', 'ddt4all', 'plugins'), 'ddtplugins'),
+    (os.path.join(project_root, 'src', 'obd_v2', 'plugins'), 'ddtplugins'),
     
     # Style files
     (os.path.join(project_root, 'resources', 'styles'), 'resources/styles'),
@@ -77,7 +77,7 @@ a = Analysis(
         'xml.etree.ElementTree',
         'xml.dom.minidom',
         
-        # DDT4ALL specific modules
+        # OBD-V2 specific modules
         'ecu',
         'elm',
         'options',
@@ -115,7 +115,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='DDT4ALL',
+    name='OBD-V2',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -136,22 +136,22 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='DDT4ALL',
+    name='OBD-V2',
 )
 
 app = BUNDLE(
     coll,
-    name='DDT4ALL.app',
+    name='OBD-V2.app',
     icon=os.path.join(project_root, 'resources', 'icons', 'obd.icns'),
-    bundle_identifier='com.github.cedricp.ddt4all',
+    bundle_identifier='com.github.sgtpoebeltrupp.obd-v2',
     version='3.0.7',
     info_plist={
-        'CFBundleName': 'DDT4ALL',
-        'CFBundleDisplayName': 'DDT4ALL Diagnostic Tool',
+        'CFBundleName': 'OBD-V2',
+        'CFBundleDisplayName': 'OBD-V2 Diagnostic Tool',
         'CFBundleShortVersionString': '3.0.7',
         'CFBundleVersion': '3.0.7',
-        'CFBundleExecutable': 'DDT4ALL',
-        'CFBundleIdentifier': 'com.github.cedricp.ddt4all',
+        'CFBundleExecutable': 'OBD-V2',
+        'CFBundleIdentifier': 'com.github.sgtpoebeltrupp.obd-v2',
         'CFBundleInfoDictionaryVersion': '6.0',
         'CFBundlePackageType': 'APPL',
         'CFBundleSignature': 'DDT4',
@@ -159,19 +159,19 @@ app = BUNDLE(
         'LSApplicationCategoryType': 'public.app-category.developer-tools',
         'NSHighResolutionCapable': True,
         'NSRequiresAquaSystemAppearance': False,  # Support dark mode
-        'NSHumanReadableCopyright': 'Copyright ©2016-2026 Cedric PAILLE',
+        'NSHumanReadableCopyright': 'Copyright ©2026 OBD-V2',
         'CFBundleDocumentTypes': [
             {
                 'CFBundleTypeExtensions': ['ddt'],
-                'CFBundleTypeName': 'DDT4ALL Project File',
+                'CFBundleTypeName': 'OBD-V2 Project File',
                 'CFBundleTypeRole': 'Editor',
                 'LSHandlerRank': 'Owner',
             }
         ],
         # Hardware access permissions
-        'NSBluetoothAlwaysUsageDescription': 'DDT4ALL needs Bluetooth access to communicate with OBD adapters.',
-        'NSBluetoothPeripheralUsageDescription': 'DDT4ALL needs Bluetooth access to communicate with OBD adapters.',
-        'NSLocationWhenInUseUsageDescription': 'DDT4ALL may use location services for enhanced diagnostic features.',
-        'NSUSBDeviceUsageDescription': 'DDT4ALL needs USB access to communicate with OBD adapters.',
+        'NSBluetoothAlwaysUsageDescription': 'OBD-V2 needs Bluetooth access to communicate with OBD adapters.',
+        'NSBluetoothPeripheralUsageDescription': 'OBD-V2 needs Bluetooth access to communicate with OBD adapters.',
+        'NSLocationWhenInUseUsageDescription': 'OBD-V2 may use location services for enhanced diagnostic features.',
+        'NSUSBDeviceUsageDescription': 'OBD-V2 needs USB access to communicate with OBD adapters.',
     },
 )

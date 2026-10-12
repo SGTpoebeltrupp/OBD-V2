@@ -1,10 +1,10 @@
-# DDT4All Build Tools
+# OBD-V2 Build Tools
 
-This directory contains comprehensive build and packaging tools for creating distributable DDT4All applications across different platforms.
+This directory contains comprehensive build and packaging tools for creating distributable OBD-V2 applications across different platforms.
 
 ## Overview
 
-DDT4All uses modern Python packaging with `pyproject.toml` and provides automated build scripts for creating platform-specific installers:
+OBD-V2 uses modern Python packaging with `pyproject.toml` and provides automated build scripts for creating platform-specific installers:
 
 - **Windows**: InnoSetup-based installer with embedded Python runtime
 - **macOS**: PyInstaller-based DMG with universal binary support
@@ -38,8 +38,8 @@ DDT4All uses modern Python packaging with `pyproject.toml` and provides automate
 ### 1. Prepare Environment
 ```bash
 # Clone repository
-git clone https://github.com/cedricp/ddt4all.git
-cd ddt4all
+git clone https://github.com/sgtpoebeltrupp/obd-v2.git
+cd obd_v2
 
 # Create virtual environment
 python -m venv ./venv
@@ -52,12 +52,12 @@ pip install -e .
 ### 2. Update Version Information
 Edit `setup_tools/inno-win-setup/version.h`:
 ```c
-#define __appname__ "DDT4ALL"
+#define __appname__ "OBD-V2"
 #define __version__ "3.0.7"
 #define __status__ "Kakapo"
-#define __author__ "Cedric PAILLE"
-#define __copyright__ "Copyright 2016-2026"
-#define __email__ "cedricpaille@gmail.com"
+#define __author__ "OBD-V2"
+#define __copyright__ "Copyright ©2026"
+#define __email__ ""
 ```
 
 ### 3. Build Installer
@@ -73,7 +73,7 @@ cd setup_tools/inno-win-setup
 ```
 
 ### 4. Output
-- **Installer**: `DDT4ALL-Windows-Installer-v3.0.7_Kakapo-x64.exe`
+- **Installer**: `OBD-V2-Windows-Installer-v3.0.7_Kakapo-x64.exe`
 - **Location**: Same directory as the `.iss` file
 - **Size**: ~150-200MB (includes Python runtime)
 
@@ -90,8 +90,8 @@ cd setup_tools/inno-win-setup
 ### 1. Prepare Environment
 ```bash
 # Clone repository
-git clone https://github.com/cedricp/ddt4all.git
-cd ddt4all
+git clone https://github.com/sgtpoebeltrupp/obd-v2.git
+cd obd_v2
 
 # Create virtual environment
 python3 -m venv ./venv
@@ -131,21 +131,21 @@ brew install create-dmg
 
 # Create enhanced DMG with background and proper layout
 create-dmg \
-  --volname "DDT4ALL" \
-  --volicon "DDT4ALL.app/Contents/Resources/icon.icns" \
+  --volname "OBD-V2" \
+  --volicon "OBD-V2.app/Contents/Resources/icon.icns" \
   --window-pos 200 120 \
   --window-size 600 300 \
   --icon-size 100 \
-  --icon "DDT4ALL.app" 175 120 \
-  --hide-extension "DDT4ALL.app" \
+  --icon "OBD-V2.app" 175 120 \
+  --hide-extension "OBD-V2.app" \
   --app-drop-link 425 120 \
-  "DDT4ALL.dmg" \
+  "OBD-V2.dmg" \
   "dist/"
 ```
 
 ### 5. Output
-- **Application**: `DDT4ALL.app` (in `dist/` directory)
-- **DMG**: `DDT4ALL.dmg` (if using create-dmg)
+- **Application**: `OBD-V2.app` (in `dist/` directory)
+- **DMG**: `OBD-V2.dmg` (if using create-dmg)
 - **Architecture**: Universal binary (Intel + Apple Silicon)
 - **Size**: ~80-120MB
 
@@ -161,8 +161,8 @@ create-dmg \
 ### Development Installation (Recommended)
 ```bash
 # Clone and install
-git clone https://github.com/cedricp/ddt4all.git
-cd ddt4all
+git clone https://github.com/sgtpoebeltrupp/obd-v2.git
+cd obd_v2
 
 # Create virtual environment
 python3 -m venv ./venv
@@ -172,14 +172,14 @@ source ./venv/bin/activate
 pip install -e .
 
 # Create desktop entry
-cat > ~/.local/share/applications/ddt4all.desktop << EOF
+cat > ~/.local/share/applications/obd_v2.desktop << EOF
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=DDT4ALL
+Name=OBD-V2
 Comment=ECU diagnostic tool
-Exec=$(pwd)/venv/bin/ddt4all
-Icon=$(pwd)/src/ddt4all/resources/icons/obd.ico
+Exec=$(pwd)/venv/bin/obd_v2
+Icon=$(pwd)/src/obd_v2/resources/icons/obd.ico
 Terminal=false
 Categories=Development;Science;
 EOF
@@ -200,12 +200,12 @@ python setup.py --command-packages=stdeb bdist_deb
 
 ### Automatic Version Sync
 The build systems automatically sync version information from:
-- `src/ddt4all/version.py` (primary source)
+- `src/obd_v2/version.py` (primary source)
 - `pyproject.toml` (package version)
 - `setup_tools/inno-win-setup/version.h` (Windows installer)
 
 ### Version Update Process
-1. Update `src/ddt4all/version.py`
+1. Update `src/obd_v2/version.py`
 2. Update `pyproject.toml` to match
 3. Re-run build scripts
 

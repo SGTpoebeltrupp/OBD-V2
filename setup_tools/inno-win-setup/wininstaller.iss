@@ -7,8 +7,8 @@
 #define MyAppAuthor     Str(__author__)
 #define MyAppCompany    Str(__author__)
 #define MyAppContact    Str(__email__)  
-#define MyAppSupportURL "https://github.com/cedricp/ddt4all" 
-#define MyAppReadmeMd   "https://github.com/cedricp/ddt4all/blob/master/README.md"
+#define MyAppSupportURL "https://github.com/sgtpoebeltrupp/obd-v2" 
+#define MyAppReadmeMd   "https://github.com/sgtpoebeltrupp/obd-v2/blob/master/README.md"
 #define MyCopyright     Str(__copyright__) + " - " + MyAppAuthor
 #define APP_ID          "{3E70988F-0D77-4639-800D-2CD9DB2617B1}"
 #define PYTHON_FOLDER   "Python313-x64"
@@ -58,7 +58,7 @@ AppId={{#APP_ID}
 
 [Files]
 Source: "win32_deps\VC_redist.x64.exe"; DestDir: "{app}\win32_deps"; Flags: ignoreversion; Permissions: users-full
-Source: "\DDT4ALL-Dist-Versions\Python313\*"; DestDir: "{app}\{#PYTHON_FOLDER}"; Flags: ignoreversion recursesubdirs; Permissions: users-full; Excludes: "*.pyc"
+Source: "\OBD-V2-Dist-Versions\Python313\*"; DestDir: "{app}\{#PYTHON_FOLDER}"; Flags: ignoreversion recursesubdirs; Permissions: users-full; Excludes: "*.pyc"
 Source: "..\..\resources\*"; DestDir: "{app}\resources"; Flags: ignoreversion createallsubdirs recursesubdirs; Permissions: users-full
 Source: "..\..\src\*"; DestDir: "{app}\src"; Flags: ignoreversion createallsubdirs recursesubdirs; Permissions: users-full; Excludes: "*.pyc"
 Source: "..\..\pyproject.toml"; DestDir: "{app}"; Flags: ignoreversion; Permissions: users-full
@@ -75,7 +75,7 @@ Type: filesandordirs; Name: "{group}"
 Type: filesandordirs; Name: "{app}"
 
 [Run]
-Filename: "{app}\{#PYTHON_FOLDER}\python.exe"; Parameters: "-m ddt4all"; WorkingDir: "{app}"; Flags: postinstall nowait skipifsilent runasoriginaluser; Description: "{cm:OpenAfterInstall}"
+Filename: "{app}\{#PYTHON_FOLDER}\python.exe"; Parameters: "-m obd_v2"; WorkingDir: "{app}"; Flags: postinstall nowait skipifsilent runasoriginaluser; Description: "{cm:OpenAfterInstall}"
 
 [Code]
 procedure InstallMSRuntimes;
@@ -122,11 +122,11 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "microsoft_runtimes"; Description: "{cm:MSruntimes}"; GroupDescription: "Microsoft Visual C++ Redistributable"; Flags: checkedonce
 
 [Icons]
-Name: "{app}\{#MyAppName}"; Filename: "{app}\{#PYTHON_FOLDER}\python.exe"; WorkingDir: "{app}"; IconFilename: "{app}\resources\icons\obd.ico"; Parameters: "-m ddt4all"; Comment: "{#MyAppName} Diagnostic Tool"
+Name: "{app}\{#MyAppName}"; Filename: "{app}\{#PYTHON_FOLDER}\python.exe"; WorkingDir: "{app}"; IconFilename: "{app}\resources\icons\obd.ico"; Parameters: "-m obd_v2"; Comment: "{#MyAppName} Diagnostic Tool"
 Name: "{group}\{cm:UninstallProgram}"; Filename: "{uninstallexe}"; Comment: "Uninstall {#MyAppName} Diagnostic Tool"
-Name: "{group}\{#MyAppName}"; Filename: "{app}\{#PYTHON_FOLDER}\python.exe"; WorkingDir: "{app}"; IconFilename: "{app}\resources\icons\obd.ico"; Parameters: "-m ddt4all"; Comment: "{#MyAppName} Diagnostic Tool"
+Name: "{group}\{#MyAppName}"; Filename: "{app}\{#PYTHON_FOLDER}\python.exe"; WorkingDir: "{app}"; IconFilename: "{app}\resources\icons\obd.ico"; Parameters: "-m obd_v2"; Comment: "{#MyAppName} Diagnostic Tool"
 Name: "{group}\{#MyAppName}-Fix"; Filename: "{cmd}"; WorkingDir: "{app}"; IconFilename: "{app}\resources\icons\obd.ico"; Parameters: "/C ""{app}\fixModX64.bat"" -p"; Comment: "{#MyAppName} Diagnostic Tool Fix"
-Name: "{userdesktop}\{#MyAppName}"; Filename: "{app}\{#PYTHON_FOLDER}\python.exe"; WorkingDir: "{app}"; IconFilename: "{app}\resources\icons\obd.ico"; Parameters: "-m ddt4all"; Comment: "{#MyAppName} Diagnostic Tool"; Tasks: desktopicon
+Name: "{userdesktop}\{#MyAppName}"; Filename: "{app}\{#PYTHON_FOLDER}\python.exe"; WorkingDir: "{app}"; IconFilename: "{app}\resources\icons\obd.ico"; Parameters: "-m obd_v2"; Comment: "{#MyAppName} Diagnostic Tool"; Tasks: desktopicon
 
 [CustomMessages]
 en.MSruntimes=Install Microsoft Visual C++ Redistributable runtimes files

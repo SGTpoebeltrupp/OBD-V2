@@ -5,9 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 readme = "README.md"
 license = {text = "GPL-3.0-or-later"}
-name = "ddt4all"
+name = "obd_v2"
 version = "3.1.3"
-description = "DDT4All is a comprehensive tool to create your own ECU parameters screens and connect to a CAN network with various OBD-II interfaces including ELM327, Vlinker FS, VGate, ObdLink SX, and ELS27 adapters."
+description = "OBD-V2 is a comprehensive tool to create your own ECU parameters screens and connect to a CAN network with various OBD-II interfaces including ELM327, Vlinker FS, VGate, ObdLink SX, and ELS27 adapters."
 requires-python = ">=3.8"
 
 dependencies = [
@@ -59,14 +59,14 @@ bluetooth = [
 ]
 
 [project.scripts]
-ddt4all = "ddt4all.main:main"
+obd_v2 = "obd_v2.main:main"
 
 [tool.coverage.report]
 show_missing = true
 skip_covered = true
 
 [tool.coverage.run]
-source = ["ddt4all"]
+source = ["obd_v2"]
 branch = true
 
 [tool.ruff]
@@ -82,7 +82,7 @@ package-dir = {"" = "src"}
 where = ["src"]
 
 [tool.setuptools.package-data]
-ddt4all = [
+obd_v2 = [
     "resources/*.json",
     "generated/locales/*/LC_MESSAGES/*.mo",
 ]

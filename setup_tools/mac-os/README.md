@@ -1,6 +1,6 @@
-# DDT4ALL macOS Build Instructions
+# OBD-V2 macOS Build Instructions
 
-This directory contains the build configuration for creating a distributable DMG installer for DDT4ALL on macOS.
+This directory contains the build configuration for creating a distributable DMG installer for OBD-V2 on macOS.
 
 ## Files Overview
 
@@ -49,18 +49,18 @@ chmod +x builddmg.sh
 2. **Create DMG installer**:
    ```bash
    create-dmg \
-     --volname "DDT4ALL" \
+     --volname "OBD-V2" \
      --volicon "../../resources/icons/obd.icns" \
      --window-pos 200 120 \
      --window-size 600 300 \
      --icon-size 100 \
      --no-internet-enable \
-     --icon "DDT4ALL.app" 175 120 \
-     --hide-extension "DDT4ALL.app" \
+     --icon "OBD-V2.app" 175 120 \
+     --hide-extension "OBD-V2.app" \
      --eula "../../license.txt" \
      --app-drop-link 425 120 \
      --hdiutil-verbose \
-     "dist/DDT4ALL.dmg" \
+     "dist/OBD-V2.dmg" \
      "dist/dmg/"
    ```
 
@@ -89,11 +89,11 @@ export TEAM_ID="XXXXXXXXXX"
 
 The build expects the following project structure:
 ```
-ddt4all/
-|-- src/ddt4all/main.py          # Main application entry point
+obd_v2/
+|-- src/obd_v2/main.py          # Main application entry point
 |-- resources/icons/obd.icns     # Application icon
 |-- locales/                     # Translation files
-|-- src/ddt4all/plugins/         # Plugin files
+|-- src/obd_v2/plugins/         # Plugin files
 |-- ecu.zip                      # ECU database
 |-- config.json                  # Configuration file
 |-- license.txt                   # License file
@@ -139,8 +139,8 @@ debug=True    # Enable debug symbols
 ## Output
 
 The build process creates:
-- `dist/DDT4ALL.app` - The macOS application bundle
-- `dist/DDT4ALL.dmg` - The distributable DMG installer
+- `dist/OBD-V2.app` - The macOS application bundle
+- `dist/OBD-V2.dmg` - The distributable DMG installer
 
 ## Version Information
 

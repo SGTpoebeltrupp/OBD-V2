@@ -1,4 +1,4 @@
-### ddt4all specific
+### obd_v2 specific
 /ecus/
 /logs/
 /btpDB/
@@ -51,4 +51,4 @@ __pycache__/
 coverage.xml
 /scripts/resources.qrc
 *.po~
-ddt4all-*.AppImage
+obd_v2-*.AppImage

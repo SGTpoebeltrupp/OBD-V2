@@ -1,14 +1,14 @@
-"""Tests for the "Clear DDT4ALL History" action (Tools menu).
+"""Tests for the "Clear OBD-V2 History" action (Tools menu).
 
 The action must reset the live widgets (ECU / Screen windows) and not only the
-saved configuration, otherwise the windows stay filled until DDT4ALL restarts.
+saved configuration, otherwise the windows stay filled until OBD-V2 restarts.
 """
 
-import ddt4all.options as options
-import ddt4all.ui.main_window.main_widget as main_widget
-from ddt4all.ui.main_window.main_widget import MainWidget
+import obd_v2.options as options
+import obd_v2.ui.main_window.main_widget as main_widget
+from obd_v2.ui.main_window.main_widget import MainWidget
 
-_ = options.translator('ddt4all')
+_ = options.translator('obd_v2')
 
 
 def _fake_main_window(mocker, paramview_opened=True, vehicle_count=2):

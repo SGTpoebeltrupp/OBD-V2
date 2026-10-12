@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import xml.dom.minidom
 
-from ddt4all.core.ecu.utils import cleanhtml, getChildNodesByName, hex16_tosigned, hex8_tosigned
+from obd_v2.core.ecu.utils import cleanhtml, getChildNodesByName, hex16_tosigned, hex8_tosigned
 
 
 def test_hex8_tosigned():

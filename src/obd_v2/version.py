@@ -1,0 +1,11 @@
+__appname__ = "OBD-V2"
+__author__ = "OBD-V2"
+__copyright__ = "Copyright ©2026"
+__credits__ = []
+__contributors__ = {}
+__license__ = "GPL"
+__version__ = "3.1.3"
+__maintainer__ = "OBD-V2"
+__email__ = ""
+__codename__ = "V2"
+__status__ = "dev"

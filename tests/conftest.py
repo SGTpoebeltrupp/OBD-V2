@@ -18,7 +18,7 @@ def force_english_locale():
     """
     # Import and patch all CLI command handlers that use translation
     try:
-        import ddt4all.cli.cmd_handlers.doip as doip_module
+        import obd_v2.cli.cmd_handlers.doip as doip_module
         doip_module._ = lambda x: x  # Force English for DoIP tests
     except ImportError:
         pass
@@ -26,7 +26,7 @@ def force_english_locale():
     # Add more modules here as they start using translation
     # Example:
     # try:
-    #     import ddt4all.cli.cmd_handlers.some_module as some_module
+    #     import obd_v2.cli.cmd_handlers.some_module as some_module
     #     some_module._ = lambda x: x
     # except ImportError:
     #     pass

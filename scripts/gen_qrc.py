@@ -1,6 +1,6 @@
 #
 # script that allows to generate resources.qrc file from the resources directory
-# It also compiles it to src/ddt4all/generated/resources_rc.py
+# It also compiles it to src/obd_v2/generated/resources_rc.py
 #
 # from root project folder : python scripts/gen_qrc.py --compile
 #
@@ -89,7 +89,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--compile", action="store_true", help="Also compile to a Python module using pyrcc5.")
     parser.add_argument(
         "--out-py",
-        default="src/ddt4all/generated/resources_rc.py",
+        default="src/obd_v2/generated/resources_rc.py",
         help="Output python module for compiled resources.",
     )
     parser.add_argument("--ext", action="append", default=[], help="Extra extension to include (repeatable).")

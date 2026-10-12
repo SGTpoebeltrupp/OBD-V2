@@ -1,14 +1,14 @@
-# DDT4All Source Code
+# OBD-V2 Source Code
 
-This directory contains the main source code for the DDT4All application.
+This directory contains the main source code for the OBD-V2 application.
 
 ## Directory Structure
 
 ```
 src/
-├── ddt4all/           # Main application package
+├── obd_v2/           # Main application package
 │   ├── __init__.py
-│   ├── __main__.py    # Entry point for python -m ddt4all
+│   ├── __main__.py    # Entry point for python -m obd_v2
 │   ├── main.py        # Main application entry point
 │   ├── file_manager.py # File and directory management utilities
 │   ├── options.py     # Configuration and settings management
@@ -97,4 +97,4 @@ See the main [README.md](../README.md) at the project root for installation inst
 pip install -e .
 
 # Run the application
-python -m ddt4all
+python -m obd_v2

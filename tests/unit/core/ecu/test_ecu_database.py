@@ -1,7 +1,7 @@
 import json
 import zipfile
 
-from ddt4all.core.ecu.ecu_database import EcuDatabase
+from obd_v2.core.ecu.ecu_database import EcuDatabase
 
 
 def test_vehiclemap_keeps_full_project_codes_from_json_targets(tmp_path, monkeypatch):

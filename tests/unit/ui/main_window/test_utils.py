@@ -1,13 +1,13 @@
 from PyQt5.QtCore import Qt
 
-from ddt4all.ui.main_window.utils import (
+from obd_v2.ui.main_window.utils import (
     set_theme_style,
     isWritable,
     set_socket_timeout,
 )
 
-import ddt4all.options as options
-_ = options.translator('ddt4all')
+import obd_v2.options as options
+_ = options.translator('obd_v2')
 
 def test_set_theme_style_does_not_crash(qapp):
     set_theme_style(qapp, Qt.Checked)  # dark

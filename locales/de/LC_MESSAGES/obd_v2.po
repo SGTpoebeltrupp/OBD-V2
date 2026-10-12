@@ -1,0 +1,2086 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# GERMAN, 24.June 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OBD-V2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 07:56+0200\n"
+"PO-Revision-Date: 2026-05-28 19:28+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "DoIP device connected successfully"
+msgstr "DoIP-Gerät erfolgreich verbunden"
+
+msgid "DoIP CAN initialized with Electric ECU support"
+msgstr "DoIP CAN mit ECU-Elektrik-Unterstützung initialisiert"
+
+#, python-format
+msgid "DoIP response: %s"
+msgstr "DoIP-Antwort: %s"
+
+#, python-format
+msgid "DoIP request failed: %s"
+msgstr "DoIP-Anfrage fehlgeschlagen: %s"
+
+#, python-format
+msgid "Testing Electric ECU: %s"
+msgstr "Teste ECU-Elektrik: %s"
+
+msgid "Failed to connect to DoIP device"
+msgstr "Verbindung zum DoIP-Gerät fehlgeschlagen"
+
+#, python-format
+msgid "DoIP connected to %(ip)s:%(port)s"
+msgstr "DoIP verbunden mit %(ip)s:%(port)s"
+
+#, python-format
+msgid "DoIP connection failed: %s"
+msgstr "DoIP-Verbindung fehlgeschlagen: %s"
+
+msgid "Insufficient vehicle identification data"
+msgstr "Unzureichende Fahrzeug-Identifikationsdaten"
+
+#, python-format
+msgid "Expected vehicle identification response, got: %s"
+msgstr "Fahrzeug-Identifikationsantwort erwartet, erhalten: %s"
+
+#, python-format
+msgid "Vehicle identification failed: %s"
+msgstr "Fahrzeug-Identifikation fehlgeschlagen: %s"
+
+msgid "Insufficient session control data"
+msgstr "Unzureichende Sitzungssteuerungsdaten"
+
+#, python-format
+msgid "Expected diagnostic session control response, got: %s"
+msgstr "Diagnosesitzungssteuerungsantwort erwartet, erhalten: %s"
+
+#, python-format
+msgid "Diagnostic session control failed: %s"
+msgstr "Diagnosesitzungssteuerung fehlgeschlagen: %s"
+
+msgid "Insufficient diagnostic message data"
+msgstr "Unzureichende Diagnosenachrichtendaten"
+
+#, python-format
+msgid "Expected diagnostic message response, got: %s"
+msgstr "Diagnosenachrichtenantwort erwartet, erhalten: %s"
+
+msgid "Insufficient alive check data"
+msgstr "Unzureichende Alive-Prüfungsdaten"
+
+#, python-format
+msgid "Expected alive check response, got: %s"
+msgstr "Alive-Prüfungsantwort erwartet, erhalten: %s"
+
+#, python-format
+msgid "Alive check failed: %s"
+msgstr "Alive-Prüfung fehlgeschlagen: %s"
+
+#, python-format
+msgid "DoIP Vehicle identified: VIN=%(vin)s, Address=%(addr)s"
+msgstr "DoIP Fahrzeug identifiziert: VIN=%(vin)s, Adresse=%(addr)s"
+
+#, python-format
+msgid "DoIP vehicle identification failed: %s"
+msgstr "DoIP Fahrzeug-Identifikation fehlgeschlagen: %s"
+
+msgid "Not connected to DoIP device"
+msgstr "Nicht mit DoIP-Gerät verbunden"
+
+#, python-format
+msgid "Invalid hex request format: %s"
+msgstr "Ungültiges Hex-Anfrageformat: %s"
+
+#, python-format
+msgid "DoIP session start failed: %s"
+msgstr "DoIP-Sitzungsstart fehlgeschlagen: %s"
+
+#, python-format
+msgid "DoIP CAN initialization failed: %s"
+msgstr "DoIP CAN-Initialisierung fehlgeschlagen: %s"
+
+#, python-format
+msgid "DoIP: Electric ECU detected - %s"
+msgstr "DoIP: ECU-Elektrik erkannt - %s"
+
+msgid "DoIP: Using extended addressing for Electric Vehicle Systems"
+msgstr "DoIP: Erweiterte Adressierung für Elektrofahrzeugsysteme verwenden"
+
+#, python-brace-format
+msgid "DoIP: Using 29-bit extended addressing - TX:0x{:04X}, RX:0x{:04X}"
+msgstr ""
+"DoIP: Verwende 29-Bit-erweiterte Adressierung - TX:0x{:04X}, RX:0x{:04X}"
+
+#, python-brace-format
+msgid "DoIP: Using 11-bit standard addressing - TX:0x{:03X}, RX:0x{:03X}"
+msgstr "DoIP: Verwende 11-Bit-Standardadressierung - TX:0x{:03X}, RX:0x{:03X}"
+
+msgid "Warning, cannot get signed value for"
+msgstr "Warnung, Vorzeichenwert kann nicht abgerufen werden für"
+
+msgid "Division by zero, please check data item: "
+msgstr "Division durch Null, bitte Datenpunkt überprüfen: "
+
+msgid "getHexValue >> abnormal remaining bytes "
+msgstr "getHexValue >> anormale verbleibende Bytes "
+
+msgid "Adding group "
+msgstr "Gruppe hinzufügen "
+
+msgid "Unable to find eculist"
+msgstr "ECU-Liste nicht gefunden"
+
+msgid "Cannot find file "
+msgstr "Datei nicht gefunden "
+
+msgid "Cannot load ECU file"
+msgstr "ECU-Datei kann nicht geladen werden"
+
+msgid "XML not found"
+msgstr "XML nicht gefunden"
+
+msgid "Cannot retrieve functionnal address of ECU"
+msgstr "Funktionale ECU-Adresse kann nicht abgerufen werden"
+
+msgid "Generated stream "
+msgstr "Stream generiert "
+
+msgid "Send request stream "
+msgstr "Anfrage-Stream senden "
+
+msgid "Received stream "
+msgstr "Stream empfangen "
+
+msgid "Request ECU Error"
+msgstr "ECU-Anfrage Fehler"
+
+msgid "Decoded values"
+msgstr "Dekodierte Werte"
+
+msgid "Found: "
+msgstr "Gefunden: "
+
+msgid "Identified ECU"
+msgstr "ECU identifiziert"
+
+msgid "Found ECU"
+msgstr "ECU gefunden"
+
+msgid "(not perfect match)"
+msgstr "(keine perfekte Übereinstimmung)"
+
+msgid "(no relevant ECU file found)"
+msgstr "(keine relevante ECU-Datei gefunden)"
+
+msgid "Warning, address"
+msgstr "Warnung, Adresse"
+
+msgid "is not mapped"
+msgstr "ist nicht zugeordnet"
+
+msgid "Scanning address: "
+msgstr "Scanne Adresse: "
+
+#, python-format
+msgid "DoIP ECU response format unknown: %s"
+msgstr "DoIP ECU-Antwortformat unbekannt: %s"
+
+#, python-format
+msgid "Error parsing DoIP response: %s"
+msgstr "Fehler beim Parsen der DoIP-Antwort: %s"
+
+#, python-format
+msgid "DoIP ECU at %(addr)s responded with minimal data: %(response)s"
+msgstr "DoIP ECU bei %(addr)s antwortete mit minimalen Daten: %(response)s"
+
+#, python-format
+msgid "Initializing DoIP connection to %(ip)s:%(port)s (timeout: %(timeout)ss)"
+msgstr ""
+"DoIP-Verbindung zu %(ip)s:%(port)s wird initialisiert (Timeout: %(timeout)ss)"
+
+#, python-format
+msgid "DoIP connection established: %(ip)s:%(port)s"
+msgstr "DoIP-Verbindung hergestellt: %(ip)s:%(port)s"
+
+#, python-format
+msgid "DoIP initialization error: %s"
+msgstr "DoIP-Initialisierungsfehler: %s"
+
+msgid "No DoIP addresses available for scanning"
+msgstr "Keine DoIP-Adressen für Scanning verfügbar"
+
+msgid "Scanning DoIP address: "
+msgstr "Scanne DoIP Adresse: "
+
+#, python-format
+msgid "Warning: address %(addr)s is not mapped"
+msgstr "Warnung: Adresse %(addr)s ist nicht zugeordnet"
+
+#, python-format
+msgid "No identification data from DoIP ECU at address %s"
+msgstr "Keine Identifikationsdaten von DoIP ECU an Adresse %s"
+
+#, python-format
+msgid "Negative response from DoIP ECU at address %s"
+msgstr "Negative Antwort von DoIP ECU an Adresse %s"
+
+#, python-format
+msgid "Failed to start session with DoIP ECU at address %s"
+msgstr "Sitzungsstart mit DoIP ECU an Adresse %s fehlgeschlagen"
+
+#, python-format
+msgid "Failed to initialize DoIP communication with address %s"
+msgstr "DoIP-Kommunikationsinitialisierung mit Adresse %s fehlgeschlagen"
+
+msgid "DoIP device not available for scanning"
+msgstr "DoIP-Gerät nicht für Scanning verfügbar"
+
+#, python-format
+msgid "Error during DoIP scan: %s"
+msgstr "Fehler während DoIP-Scan: %s"
+
+#, python-format
+msgid "Simulation mode: DoIP address %s would be scanned"
+msgstr "Simulationsmodus: DoIP-Adresse %s würde gescannt werden"
+
+#, python-format
+msgid "Would connect to DoIP ECU at address %s and read identification data"
+msgstr ""
+"Würde mit DoIP ECU an Adresse %s verbinden und Identifikationsdaten lesen"
+
+msgid "DoIP connection closed"
+msgstr "DoIP-Verbindung geschlossen"
+
+#, python-format
+msgid "Error closing DoIP connection: %s"
+msgstr "Fehler beim Schließen der DoIP-Verbindung: %s"
+
+#, python-format
+msgid "Device detection error: %s"
+msgstr "Geräteerkennungsfehler: %s"
+
+#, python-format
+msgid "Device initialization error: %s"
+msgstr "Geräteinitialisierungsfehler: %s"
+
+msgid "Found USB device:"
+msgstr "USB-Gerät gefunden:"
+
+msgid "USB device detection error:"
+msgstr "USB-Geräteerkennungsfehler:"
+
+msgid ""
+"Note: This error does not affect serial communication or bypass cable "
+"functionality."
+msgstr ""
+"Hinweis: Dieser Fehler beeinträchtigt nicht die serielle Kommunikation oder "
+"die Funktionalität des Bypass-Kabels."
+
+msgid "Trying to open port "
+msgstr "Versuche Anschluss zu oeffnen "
+
+msgid "Port initialization failed"
+msgstr "Port-Initialisierung fehlgeschlagen"
+
+msgid "Port connection failed - port object is invalid"
+msgstr "Portverbindung fehlgeschlagen - Port-Objekt ist ungültig"
+
+msgid "STN connection established"
+msgstr "STN-Verbindung hergestellt"
+
+msgid "Version: "
+msgstr "Version: "
+
+#, python-format
+msgid "STPX/STN configuration warning: %s"
+msgstr "STPX/STN-Konfigurationswarnung: %s"
+
+msgid "No ELM interface on port"
+msgstr "Kein ELM angeschlossen"
+
+msgid "OBDLink Connection OK, attempting full speed UART switch"
+msgstr ""
+"OBDLink-Verbindung OK, versuche UART-Umschaltung auf volle Geschwindigkeit"
+
+msgid "Failed to switch OBDLink to "
+msgstr "Umschaltung von OBDLink fehlgeschlagen zu volle Geschwindigkeit "
+
+msgid "OBDLink Connection OK, using optimal settings"
+msgstr "OBDLink-Verbindung OK, verwende optimale Einstellungen"
+
+msgid "Connection established successfully"
+msgstr "Verbindung erfolgreich hergestellt"
+
+msgid "Configuring ELS27 V5 CAN pins (12-13)"
+msgstr "Konfiguriere ELS27 V5 CAN-Pins (12-13)"
+
+msgid "ELS27 V5 CAN configuration complete"
+msgstr "ELS27 V5 CAN-Konfiguration abgeschlossen"
+
+#, python-format
+msgid "ELS27 V5 configuration warning: %s"
+msgstr "ELS27 V5 Konfigurationswarnung: %s"
+
+msgid "Port is None - cannot switch speed"
+msgstr "Port ist None - Geschwindigkeit kann nicht umgeschaltet werden"
+
+#, python-format
+msgid "%s switched baudrate OK, changing UART speed now..."
+msgstr ""
+"%s Baudrate erfolgreich umgeschaltet, ändere UART-Geschwindigkeit jetzt..."
+
+#, python-format
+msgid "%s baudrate switched OK, changing UART speed now..."
+msgstr ""
+"%s Baudrate erfolgreich umgeschaltet, ändere UART-Geschwindigkeit jetzt..."
+
+#, python-format
+msgid "Not supported baudrate %s"
+msgstr "Nicht unterstützte Baudrate %s"
+
+msgid "ELM reset..."
+msgstr "ELM zurücksetzen..."
+
+msgid "Unknown address: "
+msgstr "Unbekannte Adresse: "
+
+msgid ""
+"send_can: received first frame only — AT CAF0 may have been reset by AT SP, "
+"or FC failed"
+msgstr ""
+"send_can: nur erstes Frame empfangen — AT CAF0 wurde möglicherweise durch AT "
+"SP zurückgesetzt oder FC fehlgeschlagen"
+
+#, python-format
+msgid "send_can: unexpected response byte %s — check AT CAF0 is active"
+msgstr ""
+"send_can: unerwartetes Antwort-Byte %s — prüfen Sie, ob AT CAF0 aktiv ist"
+
+msgid "Using saved device settings"
+msgstr "Gespeicherte Geräteeinstellungen verwenden"
+
+msgid "Using optimal device settings"
+msgstr "Optimale Geräteeinstellungen verwenden"
+
+msgid "Connecting to device at port: "
+msgstr "Verbindung zum Gerät an Port: "
+
+msgid "Using baudrate: "
+msgstr "Verwendung der Baudrate: "
+
+msgid "Testing for ELS27 device..."
+msgstr "Teste auf ELS27-Gerät..."
+
+msgid "ELS27 device detected: "
+msgstr "ELS27-Gerät erkannt: "
+
+msgid "Using detected baud rate: "
+msgstr "Erkannte Baudrate verwenden: "
+
+msgid "Warning: No ELS27 response detected"
+msgstr "Warnung: Keine ELS27-Antwort erkannt"
+
+msgid "Will attempt connection anyway..."
+msgstr "Wird trotzdem versuchen zu verbinden..."
+
+msgid "Connection failed: "
+msgstr "Verbindung fehlgeschlagen: "
+
+msgid "Testing basic connectivity..."
+msgstr "Teste grundlegende Konnektivität..."
+
+msgid "Warning: Device may not be ELM327 compatible"
+msgstr "Warnung: Gerät ist möglicherweise nicht ELM327-kompatibel"
+
+msgid "ELM327 device detected successfully"
+msgstr "ELM327-Gerät erfolgreich erkannt"
+
+msgid "Device version: "
+msgstr "Geräteversion: "
+
+msgid "Connection error: "
+msgstr "Verbindungsfehler: "
+
+msgid "FAIL"
+msgstr "Keine Antwort"
+
+msgid "OK/TIMEOUT"
+msgstr "OK/TIMEOUT"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Incompatible adapter on ARM core"
+msgstr "Adapter inkompatibel fuer ARM Architektur"
+
+msgid "Result: "
+msgstr "Ergebnis: "
+
+msgid " succeeded from "
+msgstr " Kommandos haben geantwortet von insgesamt "
+
+msgid "ELM Max version:"
+msgstr "Maximale ELM Version:"
+
+msgid "Using saved settings for"
+msgstr "Gespeicherte Einstellungen verwenden für"
+
+msgid "Using optimal settings for"
+msgstr "Optimale Einstellungen verwenden für"
+
+msgid "Using settings for"
+msgstr "Einstellungen verwenden für"
+
+msgid "ELM327 doesn't support DoIP, falling back to serial mode"
+msgstr "ELM327 unterstützt kein DoIP, falle auf seriellen Modus zurück"
+
+msgid "Serial port opened"
+msgstr "Serieller Anschluss geöffnet"
+
+#, python-format
+msgid "Serial connection error: %s"
+msgstr "Serieller Verbindungsfehler: %s"
+
+msgid "ELM not connected or wrong COM port"
+msgstr "ELM nicht angeschlossen oder falscher Anschluss"
+
+#, python-format
+msgid "Unexpected error: %s"
+msgstr "Unerwarteter Fehler: %s"
+
+#, python-format
+msgid "Bluetooth connection attempted: %s"
+msgstr "Bluetooth-Verbindung versucht: %s"
+
+#, python-format
+msgid "Serial connection established: %(port)s @ %(baud)s baud"
+msgstr "Serielle Verbindung hergestellt: %(port)s @ %(baud)s baud"
+
+#, python-format
+msgid "Bluetooth connection failed: %s"
+msgstr "Bluetooth-Verbindung fehlgeschlagen: %s"
+
+#, python-format
+msgid "Initializing DoIP connection to %(ip)s:%(port)s"
+msgstr "DoIP-Verbindung zu %(ip)s:%(port)s wird initialisiert"
+
+#, python-format
+msgid "DoIP connection failed: %(ip)s:%(port)s"
+msgstr "DoIP-Verbindung fehlgeschlagen: %(ip)s:%(port)s"
+
+#, python-format
+msgid "DoIP initialization failed: %s"
+msgstr "DoIP-Initialisierung fehlgeschlagen: %s"
+
+#, python-format
+msgid "Port closed: %s"
+msgstr "Port geschlossen: %s"
+
+#, python-format
+msgid "Error closing port: %s"
+msgstr "Fehler beim Schließen des Ports: %s"
+
+#, python-format
+msgid "Connecting to WiFi adapter at %(ip)s:%(port)s"
+msgstr "Verbindung mit WiFi-Adapter bei %(ip)s:%(port)s wird hergestellt"
+
+#, python-format
+msgid "WiFi connection established: %(ip)s:%(port)s"
+msgstr "WiFi-Verbindung hergestellt: %(ip)s:%(port)s"
+
+#, python-format
+msgid "WiFi connection timeout to %(ip)s:%(port)s"
+msgstr "WiFi-Verbindung-Timeout zu %(ip)s:%(port)s"
+
+#, python-format
+msgid "WiFi connection error: %s"
+msgstr "WiFi-Verbindungsfehler: %s"
+
+#, python-format
+msgid "Unexpected WiFi error: %s"
+msgstr "Unerwarteter WiFi-Fehler: %s"
+
+#, python-format
+msgid "WiFi recv: %s"
+msgstr "WiFi empfangen: %s"
+
+#, python-format
+msgid "Serial error in read_byte: %s"
+msgstr "Serieller Fehler in read_byte: %s"
+
+msgid "Connection to ELM was lost"
+msgstr "Die Verbindung zum ELM ging verloren"
+
+#, python-format
+msgid "*       Error: %s"
+msgstr "*       Fehler: %s"
+
+#, python-format
+msgid "Cannot decode bytes %s"
+msgstr "Bytes %s können nicht dekodiert werden"
+
+#, python-format
+msgid "Error in read(): %s"
+msgstr "Fehler in read(): %s"
+
+msgid "WiFi connection - baudrate change not applicable"
+msgstr "WiFi-Verbindung - Baudrate-Änderung nicht anwendbar"
+
+msgid "Attempting WiFi reconnection..."
+msgstr "Versuche WiFi-Wiederverbindung..."
+
+msgid "Port handler is None, cannot write"
+msgstr "Port-Handler ist None, kann nicht schreiben"
+
+#, python-format
+msgid "Serial write error: %s"
+msgstr "Serieller Schreibfehler: %s"
+
+#, python-format
+msgid "*       Write error: %s"
+msgstr "*       Schreibfehler: %s"
+
+msgid "TIMEOUT"
+msgstr "TIMEOUT"
+
+msgid "Checking port speed:"
+msgstr "Test der Baudrate:"
+
+msgid "WiFi connection - skipping baudrate check"
+msgstr "WiFi-Verbindung - Baudrate-Prüfung überspringen"
+
+msgid "Bluetooth connection - skipping baudrate check"
+msgstr "Bluetooth-Verbindung - Baudrate-Prüfung überspringen"
+
+msgid "Start COM speed: "
+msgstr "Starten mit Baudrate: "
+
+msgid "ELM not responding"
+msgstr "ELM antwortet nicht"
+
+msgid "Cannot zip database, no 'ecus' directory"
+msgstr "Datenbank kann nicht gezippt werden, kein 'ecus'-Verzeichnis"
+
+msgid "Starting conversion"
+msgstr "Konvertierung starten"
+
+msgid "Starting processing "
+msgstr "Verarbeitung starten "
+
+msgid " to "
+msgstr " zu "
+
+msgid "Skipping current file (cannot parse it)"
+msgstr "Aktuelle Datei überspringen (kann nicht analysiert werden)"
+
+msgid "Writing database"
+msgstr "Datenbank schreiben"
+
+msgid "Writing archive"
+msgstr "Archiv schreiben"
+
+msgid "Opening ECU Database..."
+msgstr "ECU-Datenbank öffnen..."
+
+msgid "parts as: "
+msgstr "Teile als: "
+
+msgid " please review dumpVehicles def."
+msgstr " bitte dumpVehicles-Definition überprüfen."
+
+msgid "ELS27 V5 CAN pin configuration complete"
+msgstr "ELS27 V5 CAN-Pin-Konfiguration abgeschlossen"
+
+msgid "Found USB adapter:"
+msgstr "USB-Adapter gefunden:"
+
+msgid "USB not available"
+msgstr "USB nicht verfügbar"
+
+msgid "USB Device"
+msgstr "USB-Gerät"
+
+msgid "Warning: Could not read string descriptor:"
+msgstr "Warnung: String-Deskriptor konnte nicht gelesen werden:"
+
+msgid "USB OBD Device"
+msgstr "USB OBD-Gerät"
+
+msgid "Warning: Vendor request failed:"
+msgstr "Warnung: Hersteller-Anfrage fehlgeschlagen:"
+
+msgid "Warning: PyQtWebEngine not available. Some features may be limited."
+msgstr ""
+"Warnung: PyQtWebEngine nicht verfügbar. Einige Funktionen können "
+"eingeschränkt sein."
+
+msgid "resources/projects.json not found or invalid."
+msgstr "resources/projects.json nicht gefunden oder ungültig."
+
+#, python-format
+msgid "Warning: Could not write version.h: %s"
+msgstr "Warnung: version.h konnte nicht geschrieben werden: %s"
+
+msgid "Using custom DDT database"
+msgstr "Verwendung einer benutzerdefinierten Datenbank"
+
+msgid "No COM port selected"
+msgstr "Kein Anschluss ausgewaehlt"
+
+#, python-format
+msgid "Initializing ELM with speed %i..."
+msgstr "Initialisiere ELM mit Geschwindigkeit %i..."
+
+msgid "No ELM327 or OBDLINK-SX detected on COM port "
+msgstr "Kein ELM327 oder OBDLINK-SX am ausgewählten Anschluss erkannt: "
+
+msgid "AB90 AIRBAG Reset"
+msgstr "AB90 AIRBAG Reset"
+
+msgid "Airbag Tools"
+msgstr "Airbag-Tools"
+
+msgid ""
+"AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL "
+"UNLOCK AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</"
+"font>"
+msgstr ""
+"AB90 (Clio III)/2<br>AIRBAG VIRGINIZER<br><font color='red'>DIESES PLUGIN "
+"ENTSPERRT AIRBAG-ABSTURZDATEN<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG HABEN, "
+"WAS DAS BEDEUTET</font>"
+
+msgid "Check ACU Virgin"
+msgstr "ACU Virgin prüfen"
+
+msgid "Waiting"
+msgstr "Warten"
+
+msgid "Virginize ACU"
+msgstr "ACU verjüngen"
+
+msgid "Cannot connect to ECU"
+msgstr "Kann nicht zum ECU verbinden"
+
+msgid "<font color='orange'>UNEXPECTED RESPONSE</font>"
+msgstr "<font color='orange'>UNERWARTETE ANTWORT</font>"
+
+msgid "<font color='red'>CRASH DETECTED</font>"
+msgstr "<font color='red'>CRASH ERKANNT</font>"
+
+msgid "<font color='green'>NO CRASH DETECTED</font>"
+msgstr "<font color='green'>KEIN CRASH ERKANNT</font>"
+
+#, python-format
+msgid "SDS stream: %s"
+msgstr "SDS-Stream: %s"
+
+msgid "<font color='green'>CLEAR EXECUTED</font>"
+msgstr "<font color='green'>CLEAR AUSGEFÜHRT</font>"
+
+msgid "<font color='red'>CLEAR FAILED</font>"
+msgstr "<font color='red'>CLEAR FEHLGESCHLAGEN</font>"
+
+msgid "Megane/Scenic II card programming"
+msgstr "Megane/Scenic II Karten-Programmierung"
+
+msgid "Keys"
+msgstr "Schlüssel"
+
+msgid "ENTER AFTER SALE MODE"
+msgstr "NACHVERKAUFS-MODUS EINGEBEN"
+
+msgid ""
+"<font color='red'>MEGANE II CARD PROGRAMMING<br>EXPERIMENTAL : NOT TESTED "
+"YET</font>"
+msgstr ""
+"<font color='red'>MEGANE II KARTENPROGRAMMIERUNG<br>EXPERIMENTELL : NOCH "
+"NICHT GETESTET</font>"
+
+msgid "LEARN"
+msgstr "LERNEN"
+
+msgid "VALIDATE"
+msgstr "VALIDIEREN"
+
+msgid "CANCEL"
+msgstr "ABBRECHEN"
+
+msgid "Algo 2"
+msgstr "Algo 2"
+
+msgid "ISK"
+msgstr "ISK"
+
+msgid "PIN"
+msgstr "PIN"
+
+msgid "Num key learnt"
+msgstr "Anzahl gelernter Schlüssel"
+
+msgid "CARD IDE"
+msgstr "KARTEN-IDE"
+
+msgid "Cannot get ISK, check connections and UCH compatibility"
+msgstr ""
+"ISK kann nicht abgerufen werden, Verbindungen und UCH-Kompatibilität prüfen"
+
+msgid "<font color='red'>PIN CODE NOT RECOGNIZED</font>"
+msgstr "<font color='red'>PIN CODE NICHT ANERKANNT</font>"
+
+msgid "<font color='green'>PIN CODE OK / KEY LEARNING</font>"
+msgstr "<font color='green'>PIN CODE OK / SCHLÜSSEL-LERNEN</font>"
+
+msgid "<font color='green'>PIN CODE OK / UCH LEARNING</font>"
+msgstr "<font color='green'>PIN CODE OK / UCH-LERNEN</font>"
+
+msgid "Modus/Clio III EPS Reset"
+msgstr "Modus/Clio III EPS Reset"
+
+msgid "EPS Tools"
+msgstr "EPS-Tools"
+
+msgid ""
+"Modus/Clio III EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET "
+"EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
+msgstr ""
+"Modus/Clio III EPS VIRGINIZER<br><font color='red'>DIESES PLUGIN SETZT EPS "
+"IMMO-DATEN ZURÜCK<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG HABEN, WAS DAS "
+"BEDEUTET</font>"
+
+msgid "BLANK STATUS & VIN READ"
+msgstr "BLANK STATUS & VIN LESEN"
+
+msgid "Virginize EPS"
+msgstr "EPS verjüngen"
+
+msgid "VIN - READ"
+msgstr "VIN - LESEN"
+
+msgid "VIN - WRITE"
+msgstr "VIN - SCHREIBEN"
+
+msgid "Write VIN"
+msgstr "VIN schreiben"
+
+msgid "<font color='red'>VIN - INVALID</font>"
+msgstr "<font color='red'>VIN - UNGÜLTIG</font>"
+
+msgid "<font color='red'>VIN - BAD LENGTH</font>"
+msgstr "<font color='red'>VIN - FALSCHE LÄNGE</font>"
+
+msgid "<font color='orange'>VIN WRITE FAILED</font>"
+msgstr "<font color='orange'>VIN SCHREIBEN FEHLGESCHLAGEN</font>"
+
+msgid "<font color='green'>VIN WRITE OK</font>"
+msgstr "<font color='green'>VIN SCHREIBEN OK</font>"
+
+msgid "<font color='green'>EPS virgin</font>"
+msgstr "<font color='green'>EPS verjüngt</font>"
+
+msgid "<font color='red'>EPS coded</font>"
+msgstr "<font color='red'>EPS codiert</font>"
+
+#, python-format
+msgid "SdSC0 stream: %s"
+msgstr "SdSC0-Stream: %s"
+
+msgid "Clio IV EPS Reset"
+msgstr "Clio IV EPS Reset"
+
+msgid ""
+"Clio IV EPS VIRGINIZER<br><font color='red'>THIS PLUGIN WILL RESET EPS IMMO "
+"DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
+msgstr ""
+"Clio IV EPS VIRGINIZER<br><font color='red'>DIESES PLUGIN SETZT EPS IMMO-"
+"DATEN ZURÜCK<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG HABEN, WAS DAS "
+"BEDEUTET</font>"
+
+msgid "Check EPS Virgin"
+msgstr "EPS Virgin prüfen"
+
+msgid "<font color='green'>EPS not operational</font>"
+msgstr "<font color='green'>EPS nicht betriebsbereit</font>"
+
+msgid "<font color='red'>UNEXPECTED RESPONSE</font>"
+msgstr "<font color='red'>UNERWARTETE ANTWORT</font>"
+
+#, python-format
+msgid "SdSFA stream: %s"
+msgstr "SdSFA-Stream: %s"
+
+msgid "Laguna II UCH Reset"
+msgstr "Laguna II UCH Reset"
+
+msgid "UCH Tools"
+msgstr "UCH Tools"
+
+msgid ""
+"LAGUNA II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
+"UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
+msgstr ""
+"LAGUNA II UCH VIRGINIZER<br><font color='red'>DIESES PLUGIN LÖSCHT IHR "
+"UCH<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG HABEN, WAS DAS BEDEUTET</font>"
+
+msgid "Check UCH Virgin"
+msgstr "UCH Virgin prüfen"
+
+msgid "Virginize UCH"
+msgstr "UCH verjüngen"
+
+msgid "<font color='green'>UCH virgin</font>"
+msgstr "<font color='green'>UCH verjüngt</font>"
+
+msgid "<font color='red'>UCH coded</font>"
+msgstr "<font color='red'>UCH codiert</font>"
+
+msgid "Laguna III UCH Reset"
+msgstr "Laguna III UCH Reset"
+
+msgid ""
+"LAGUNA III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
+"UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
+msgstr ""
+"LAGUNA III UCH VIRGINIZER<br><font color='red'>DIESES PLUGIN LÖSCHT IHR "
+"UCH<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG HABEN, WAS DAS BEDEUTET</font>"
+
+msgid "Megane/Scenic II UCH Reset"
+msgstr "Megane/Scenic II UCH Reset"
+
+msgid ""
+"MEGANE II UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
+"UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
+msgstr ""
+"MEGANE II UCH VIRGINIZER<br><font color='red'>DIESES PLUGIN LÖSCHT IHR "
+"UCH<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG HABEN, WAS DAS BEDEUTET</font>"
+
+msgid "Megane3 AIRBAG Reset"
+msgstr "Megane3 AIRBAG Reset"
+
+msgid ""
+"Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK "
+"AIRBAG CRASH DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
+msgstr ""
+"Megane III<br>AIRBAG VIRGINIZER<br><font color='red'>DIESES PLUGIN ENTSPERRT "
+"AIRBAG-ABSTURZDATEN<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG HABEN, WAS DAS "
+"BEDEUTET</font>"
+
+#, python-format
+msgid "SDS FA stream: %s"
+msgstr "SDS FA-Stream: %s"
+
+msgid "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
+msgstr "ZOE/FLENCE/Megane III/Scenic III EPS Reset"
+
+msgid ""
+"ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>THIS "
+"PLUGIN WILL RESET EPS IMMO DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT "
+"MEANS</font>"
+msgstr ""
+"ZOE/FLENCE/Megane III/Scenic III EPS VIRGINIZER<br><font color='red'>DIESES "
+"PLUGIN SETZT EPS IMMO-DATEN ZURÜCK<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG "
+"HABEN, WAS DAS BEDEUTET</font>"
+
+msgid "Megane/Scenic III UCH Reset"
+msgstr "Megane/Scenic III UCH Reset"
+
+msgid ""
+"MEGANE III UCH VIRGINIZER<br><font color='red'>THIS PLUGIN WILL ERASE YOUR "
+"UCH<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
+msgstr ""
+"MEGANE III UCH VIRGINIZER<br><font color='red'>DIESES PLUGIN LÖSCHT IHR "
+"UCH<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG HABEN, WAS DAS BEDEUTET</font>"
+
+msgid "RSAT4 AIRBAG Reset"
+msgstr "RSAT4 AIRBAG Reset"
+
+msgid ""
+"TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
+"VIRGINIZER<br><font color='red'>THIS PLUGIN WILL UNLOCK AIRBAG CRASH "
+"DATA<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
+msgstr ""
+"TWINGO III/ZOE/DOKKER/DUSTER ph2/TRAFIC III/CAPTUR/LODGY ph1/2<br>AIRBAG "
+"VIRGINIZER<br><font color='red'>DIESES PLUGIN ENTSPERRT AIRBAG-"
+"ABSTURZDATEN<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG HABEN, WAS DAS "
+"BEDEUTET</font>"
+
+#, python-format
+msgid "SdSEX stream: %s"
+msgstr "SdSEX-Stream: %s"
+
+msgid "CRC calculator"
+msgstr "CRC-Rechner"
+
+msgid "VIN"
+msgstr "VIN"
+
+msgid "CRC Calculator"
+msgstr "CRC-Rechner"
+
+msgid "CRC CALCULATOR"
+msgstr "CRC-RECHNER"
+
+msgid "Zoe water pump Reset"
+msgstr "Zoe Wasserpumpe Reset"
+
+msgid "EVC Tools"
+msgstr "EVC-Tools"
+
+msgid "Water pump counters"
+msgstr "Wasserpumpenzähler"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Values"
+msgstr "Werte"
+
+msgid "Action"
+msgstr "Aktion"
+
+msgid "Low Speed"
+msgstr "Niedrige Geschwindigkeit"
+
+msgid "Middle Speed"
+msgstr "Mittlere Geschwindigkeit"
+
+msgid "High Speed"
+msgstr "Hohe Geschwindigkeit"
+
+msgid "V_Timer_DrivWEP_ON"
+msgstr "V_Timer_DrivWEP_ON"
+
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+msgid ""
+"Zoe water pump counters<br><font color='red'>THIS PLUGIN WILL ERASE WATER "
+"PUMP COUNTERS<br>GO AWAY IF YOU HAVE NO IDEA OF WHAT IT MEANS</font>"
+msgstr ""
+"Zoe Wasserpumpenzähler<br><font color='red'>DIESES PLUGIN LÖSCHT WASSER-"
+"PUMPENZÄHLER<br>GEHEN SIE WEG, WENN SIE KEINE AHNUNG HABEN, WAS DAS "
+"BEDEUTET</font>"
+
+msgid "Check values"
+msgstr "Werte prüfen"
+
+msgid "Waiting action"
+msgstr "Warte auf Aktion"
+
+msgid "Reset all counters"
+msgstr "Alle Zähler zurücksetzen"
+
+msgid ""
+"<h1>TIPS</h1><ul><li>Insert key CARD</li><li>Put D position</li><li>Press/"
+"Stay START until <b>Remove card</b> message</li><li>Put P position</"
+"li><li>Keep key card inserted</li></ul>"
+msgstr ""
+"<h1>TIPPS</h1><ul><li>Karten-Schlüssel einlegen</li><li>D-Position einlegen</"
+"li><li>START gedrückt halten bis <b>Karte entfernen</b>-Meldung</li><li>P-"
+"Position einlegen</li><li>Karten-Schlüssel eingelegt lassen</li></ul>"
+
+msgid "<font color='green'>Values read</font>"
+msgstr "<font color='green'>Werte gelesen</font>"
+
+msgid "Reading Low speed"
+msgstr "Lese niedrige Geschwindigkeit"
+
+msgid "Reading Middle speed"
+msgstr "Lese mittlere Geschwindigkeit"
+
+msgid "Reading High speed"
+msgstr "Lese hohe Geschwindigkeit"
+
+msgid "<font color='green'>CLEAR V_Timer_DrivWEP_ON EXECUTED</font>"
+msgstr "<font color='green'>CLEAR V_Timer_DrivWEP_ON AUSGEFÜHRT</font>"
+
+msgid "<font color='red'>CLEAR V_Timer_DrivWEP_ON FAILED</font>"
+msgstr "<font color='red'>CLEAR V_Timer_DrivWEP_ON FEHLGESCHLAGEN</font>"
+
+msgid "<font color='green'>CLEAR Low EXECUTED</font>"
+msgstr "<font color='green'>CLEAR Low AUSGEFÜHRT</font>"
+
+msgid "<font color='red'>CLEAR Low FAILED</font>"
+msgstr "<font color='red'>CLEAR Low FEHLGESCHLAGEN</font>"
+
+msgid "<font color='green'>CLEAR Medium EXECUTED</font>"
+msgstr "<font color='green'>CLEAR Medium AUSGEFÜHRT</font>"
+
+msgid "<font color='red'>CLEAR Medium FAILED</font>"
+msgstr "<font color='red'>CLEAR Medium FEHLGESCHLAGEN</font>"
+
+msgid "<font color='green'>CLEAR HIGH EXECUTED</font>"
+msgstr "<font color='green'>CLEAR HIGH AUSGEFÜHRT</font>"
+
+msgid "<font color='red'>CLEAR HIGH FAILED</font>"
+msgstr "<font color='red'>CLEAR HIGH FEHLGESCHLAGEN</font>"
+
+msgid "Add"
+msgstr "Hinzufügen"
+
+msgid "Del"
+msgstr "Löschen"
+
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+msgid "Move up"
+msgstr "Nach oben"
+
+msgid "Check"
+msgstr "Kontrollieren"
+
+#, python-format
+msgid "Request %s not found"
+msgstr "Anfrage %s nicht gefunden"
+
+#, python-format
+msgid ""
+"<font color=green>Request</font><font color=blue>'%s'</font> has no missing "
+"input values"
+msgstr ""
+"<font color=green>Anfrage</font><font color=blue>'%s'</font> hat keine "
+"fehlenden Eingabewerte"
+
+#, python-format
+msgid ""
+"<font color=red>Request</font><font color=blue>'%s'</font> has missing inputs"
+msgstr ""
+"<font color=red>Anfrage</font><font color=blue>'%s'</font> hat fehlende "
+"Eingabe"
+
+#, python-format
+msgid "<font color=orange> - '%s'</font>"
+msgstr "<font color=orange> - '%s'</font>"
+
+msgid "Delay;Request"
+msgstr "Verzoegerung;Anfrage"
+
+msgid "Screen initialization"
+msgstr "Bildschirm laden"
+
+msgid "Requests to send before screen drawing"
+msgstr "Anfrage senden, vor dem Entwerfen des Bildschirms"
+
+msgid "Button name;Unique name"
+msgstr "Schaltflaechenname;Einzigartiger Name"
+
+msgid "New"
+msgstr "Neu"
+
+msgid "Duplicate selected"
+msgstr "Auswahl duplizieren"
+
+msgid "Remove selected"
+msgstr "Auswahl entfernen"
+
+msgid "Reload"
+msgstr "Neu laden"
+
+msgid "Validate changes"
+msgstr "Änderungen bestätigen"
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "Data type"
+msgstr "Datentyp"
+
+msgid "Numeric"
+msgstr "Numerisch"
+
+msgid "Numeric items"
+msgstr "Numerische Elemente"
+
+msgid "Hex"
+msgstr "Hex"
+
+#, python-format
+msgid "Data is used by request %s"
+msgstr "Daten werden von Anfrage %s verwendet"
+
+msgid "New data"
+msgstr "Neue Daten"
+
+msgid "Replace me with request description"
+msgstr "Ersetze mich mit Anfragebeschreibung"
+
+msgid "Data name;Description"
+msgstr "Datenname;Beschreibung"
+
+msgid "Goto data"
+msgstr "Zu Daten gehen"
+
+msgid "Remove"
+msgstr "Entfernen"
+
+msgid "Add to screen"
+msgstr "Zum Bildschirm hinzufügen"
+
+msgid "ECU Function address"
+msgstr "ECU Funktionsadresse"
+
+msgid "ECU Protocol"
+msgstr "ECU Protokoll"
+
+msgid "Tool > Ecu ID (Hex)"
+msgstr "Tool > Ecu ID (Hex)"
+
+msgid "Ecu > Tool ID (Hex)"
+msgstr "Ecu > Tool ID (Hex)"
+
+msgid "Coding"
+msgstr "Codierung"
+
+msgid "ECU Auto identification"
+msgstr "ECU Automatische Identifizierung"
+
+msgid "Add new"
+msgstr "Neu hinzufügen"
+
+msgid "Delete selected"
+msgstr "Ausgewählte löschen"
+
+msgid "Number of bits"
+msgstr "Anzahl der Bits"
+
+msgid "Signed"
+msgstr "Signiert"
+
+msgid "Add item"
+msgstr "Element hinzufügen"
+
+msgid "Del item"
+msgstr "Element löschen"
+
+msgid "New item"
+msgstr "Neues Element"
+
+msgid "Value;Text"
+msgstr "Wert;Text"
+
+msgid "Number of bit"
+msgstr "Bitanzahl"
+
+msgid "Unit"
+msgstr "Einheit"
+
+msgid "Format"
+msgstr "Format"
+
+msgid "Value = (AX+B) / C"
+msgstr "Wert = (AX+B) / C"
+
+msgid "Number of bytes"
+msgstr "Anzahl der Bytes"
+
+msgid "Send request bytes (HEX)"
+msgstr "Anfrage-Bytes senden (HEX)"
+
+msgid "Receive bytes (HEX)"
+msgstr "Bytes empfangen (HEX)"
+
+msgid "Data length"
+msgstr "Datenlänge"
+
+msgid "Shift byte count"
+msgstr "Shift-Byte-Zähler"
+
+msgid "Data name;Start byte;Bit offset;Bit count;Endianess"
+msgstr "Datenname;Start-Byte;Bit-Versatz;Bit-Anzahl;Endianess"
+
+msgid "Little"
+msgstr "Little"
+
+msgid "Big"
+msgstr "Big"
+
+msgid "Inherits globals"
+msgstr "Erbt Globals"
+
+msgid "No SDS"
+msgstr "Kein SDS (Sprachdialogsystem)"
+
+msgid "Plant"
+msgstr "Werk"
+
+msgid "After Sale"
+msgstr "Nachverkauf"
+
+msgid "Engineering"
+msgstr "Entwicklung"
+
+msgid "Supplier"
+msgstr "Lieferant"
+
+msgid "Reload requests"
+msgstr "Anfragen neuladen"
+
+msgid "Add request"
+msgstr "Anfrage hinzufuegen"
+
+msgid "Send bytes"
+msgstr "Bytes senden"
+
+msgid "Receive bytes"
+msgstr "Bytes empfangen"
+
+msgid "Request name;Bytes;Manual"
+msgstr "Name;Bytes;Manuell anfordern"
+
+msgid "No request named"
+msgstr "Keine Anfrage mit Namen"
+
+msgid "Found similar"
+msgstr "Ähnlich gefunden"
+
+msgid "DataItem not found"
+msgstr "DataItem nicht gefunden"
+
+msgid "Cannot find data "
+msgstr "Daten nicht gefunden "
+
+msgid " vs "
+msgstr " vs "
+
+msgid "Cannot draw input "
+msgstr "Plug-In laden fehlgeschlagen "
+
+msgid "No Value"
+msgstr "Kein Wert"
+
+msgid ""
+"<center>This Software is free, but I need money to buy cables/ECUs and make "
+"this application more reliable</center>"
+msgstr ""
+"<center>Diese Software ist kostenlos, aber ich brauche Geld für Kabel/ECUs "
+"und um diese Anwendung zuverlässiger zu machen</center>"
+
+msgid "Yes I contribute"
+msgstr "Ja, ich unterstütze das Projekt"
+
+msgid "No, I don't"
+msgstr "Nein, ich möchte nicht"
+
+msgid "Thank you for you contribution, if nothing happens, please go to"
+msgstr ""
+"Vielen Dank für Ihren Beitrag, wenn nichts passiert, gehen Sie bitte zu"
+
+msgid "ECU Finder"
+msgstr "ECU-Sucher"
+
+msgid "Address :"
+msgstr "Adresse :"
+
+msgid "ID frame :"
+msgstr "ID-Frame :"
+
+msgid "No vehicles available"
+msgstr "Keine Fahrzeuge verfügbar"
+
+#, python-format
+msgid "%d loaded ECUs in database."
+msgstr "%d ECUs in der Datenbank geladen."
+
+msgid "No database found"
+msgstr "Keine Datenbank gefunden"
+
+msgid "Check documentation"
+msgstr "Dokumentation prüfen"
+
+msgid "OBD-V2 Documentation"
+msgstr "OBD-V2-Dokumentation"
+
+msgid "WebEngine not available."
+msgstr "WebEngine nicht verfügbar."
+
+msgid ""
+"For full documentation with web browsing capability, install PyQtWebEngine:"
+msgstr ""
+"Für vollständige Dokumentation mit Web-Browsing-Fähigkeit, installieren Sie "
+"PyQtWebEngine:"
+
+msgid "Visit the online documentation at:"
+msgstr "Besuchen Sie die Online-Dokumentation unter:"
+
+msgid "This basic view will still show ECU documentation when available."
+msgstr ""
+"Diese Grundansicht zeigt weiterhin ECU-Dokumentation an, wenn verfügbar."
+
+msgid "Refresh rate (ms):"
+msgstr "Aktualisierungsrate (ms):"
+
+msgid "Can timeout (ms) [0:AUTO] :"
+msgstr "CAN Timeout (ms) [0:AUTO] :"
+
+msgid "Documentation"
+msgstr "Dokumentation"
+
+msgid "Screen"
+msgstr "Bildschirm"
+
+msgid "CAN Sniffer"
+msgstr "CAN Sniffer"
+
+msgid "Requests"
+msgstr "Anfragen"
+
+msgid "Data"
+msgstr "Daten"
+
+msgid "Buttons"
+msgstr "Schaltflächen"
+
+msgid "Ecu parameters"
+msgstr "ECU-Parameter"
+
+msgid "Screen Window"
+msgstr "Bildschirm-Fenster"
+
+msgid "Screens"
+msgstr "Bildschirme"
+
+msgid "Logs Window"
+msgstr "Protokoll-Fenster"
+
+msgid "Ecu Window"
+msgstr "ECU-Fenster"
+
+msgid "Ecu List Window"
+msgstr "ECU-Listen-Fenster"
+
+msgid "ToolBar"
+msgstr "Werkzeugleiste"
+
+msgid "Read DTC"
+msgstr "DTC lesen"
+
+msgid "Full log"
+msgstr "Vollständiges Protokoll"
+
+msgid "Expert mode (enable writing)"
+msgstr "Expertenmodus (Schreiben aktivieren)"
+
+msgid "Auto refresh"
+msgstr "Auto-Aktualisierung"
+
+msgid "Refresh (one shot)"
+msgstr "Aktualisieren (einmalig)"
+
+msgid "Manual command"
+msgstr "Manueller Befehl"
+
+msgid "Manual request"
+msgstr "Manuelle Anfrage"
+
+msgid "Software flow control"
+msgstr "Software-Flusskontrolle"
+
+msgid "Zoom In"
+msgstr "Vergrößern"
+
+msgid "Zoom Out"
+msgstr "Verkleinern"
+
+msgid "UI Edit"
+msgstr "UI Bearbeiten"
+
+msgid "File"
+msgstr "Datei"
+
+msgid "Open XML"
+msgstr "Öffne XML"
+
+msgid "Save current ECU"
+msgstr "Aktuelles ECU speichern"
+
+msgid "Save last record"
+msgstr "Letzten Datensatz speichern"
+
+msgid "Save ECU list"
+msgstr "ECU Liste speichern"
+
+msgid "Exit"
+msgstr "Beenden"
+
+msgid "Tools"
+msgstr "Werkzeuge"
+
+msgid "Identify ECU"
+msgstr "Identifiziere ECU"
+
+msgid "Create New ECU"
+msgstr "Neues ECU erstellen"
+
+msgid "Zip database"
+msgstr "Datenbank zippen"
+
+msgid "Clear OBD-V2 History"
+msgstr "OBD-V2-Verlauf löschen"
+
+msgid "Reset OBD-V2 Settings"
+msgstr "OBD-V2-Einstellungen zurücksetzen"
+
+msgid "View"
+msgstr "Ansicht"
+
+msgid "CarList Order"
+msgstr "Fahrzeuglisten-Reihenfolge"
+
+msgid "By Project Code"
+msgstr "Nach Projektcode"
+
+msgid "By Car Name"
+msgstr "Nach Fahrzeugname"
+
+msgid "Theme"
+msgstr "Thema"
+
+msgid "Dark Theme"
+msgstr "Dunkles Thema"
+
+msgid "Light Theme"
+msgstr "Helles Thema"
+
+msgid "Panels"
+msgstr "Panels"
+
+msgid "New Category"
+msgstr "Neue Kategorie"
+
+msgid "New Screen"
+msgstr "Neuer Bildschirm"
+
+msgid "Rename"
+msgstr "Umbenennen"
+
+msgid "Plugins"
+msgstr "Plugins"
+
+msgid "Cannot load plugin "
+msgstr "Plugin kann nicht geladen werden "
+
+msgid "Help"
+msgstr "Hilfe"
+
+msgid "Web Wiki"
+msgstr "Web Wiki"
+
+msgid "About Developers"
+msgstr "Über Entwickler"
+
+msgid "Get Git update"
+msgstr "Git Update erhalten"
+
+msgid "About"
+msgstr "Über"
+
+msgid "About OBD-V2"
+msgstr "Über OBD-V2"
+
+msgid " version:"
+msgstr " Version:"
+
+msgid "Created by:"
+msgstr "Erstellt von:"
+
+msgid "History cleared"
+msgstr "Verlauf gelöscht"
+
+msgid "Last selected vehicle and ECU history has been cleared."
+msgstr ""
+"Der Verlauf des zuletzt ausgewählten Fahrzeugs und der ECU wurde gelöscht."
+
+msgid "Configuration Reset"
+msgstr "Konfiguration gelöscht"
+
+msgid "The configuration has been reset."
+msgstr "Die Konfiguration wurde gelöscht."
+
+msgid "Options"
+msgstr "Optionen"
+
+#, python-format
+msgid "Error updating menu bar: %s"
+msgstr "Fehler beim Aktualisieren der Menüleiste: %s"
+
+msgid "CAN Line 1 Auto"
+msgstr "CAN Leitung 1 Auto"
+
+msgid "CAN Line 1@500K"
+msgstr "CAN Leitung 1@500K"
+
+msgid "CAN Line 1@250K"
+msgstr "CAN Leitung 1@250K"
+
+msgid "CAN Line 2@500K"
+msgstr "CAN Leitung 2@500K"
+
+msgid "CAN Line 2@250K"
+msgstr "CAN Leitung 2@250K"
+
+msgid "CAN Line 2@125K"
+msgstr "CAN Leitung 2@125K"
+
+msgid "KWP2000"
+msgstr "KWP2000"
+
+msgid "ISO8"
+msgstr "ISO8"
+
+msgid "Save database (keep '.zip' extension)"
+msgstr "Datenbank speichern ('.zip' Erweiterung behalten)"
+
+msgid "Zipping XML database... (this can take a few minutes)"
+msgstr "XML-Datenbank wird gezippt... (dies kann einige Minuten dauern)"
+
+msgid "Zip job finished"
+msgstr "Zip-Vorgang abgeschlossen"
+
+msgid "Enter new name"
+msgstr "Neuen Namen eingeben"
+
+msgid "Enter category name"
+msgstr "Kategoriename eingeben"
+
+msgid "Please select a category before creating new screen"
+msgstr ""
+"Bitte wählen Sie vor der Erstellung eines neuen Bildschirms eine Kategorie "
+"aus"
+
+msgid "Enter screen name"
+msgstr "Bildschirmname eingeben"
+
+msgid "Scanning CAN"
+msgstr "CAN scannen"
+
+msgid "Scanning KWP"
+msgstr "KWP scannen"
+
+msgid "Scanning DoIP"
+msgstr "DoIP scannen"
+
+msgid "Scan options"
+msgstr "Scan-Optionen"
+
+msgid "EDITION MODE"
+msgstr "BEARBEITUNGS-MODUS"
+
+msgid "CONNECTED"
+msgstr "VERBUNDEN"
+
+msgid "DISCONNECTED"
+msgstr "GETRENNT"
+
+msgid "Save vehicule (keep '.ecu' extension)"
+msgstr "Fahrzeug speichern ('.ecu' Erweiterung behalten)"
+
+msgid "Save ECU (keep '.json' extension)"
+msgstr "ECU speichern ('.json' Erweiterung behalten)"
+
+msgid "Save record (keep '.txt' extension)"
+msgstr "Datensatz speichern ('.txt' Erweiterung behalten)"
+
+msgid "Recorded "
+msgstr "Aufgezeichnet "
+
+msgid " entries"
+msgstr " Einträge"
+
+msgid "No"
+msgstr "Nein"
+
+msgid "ELM port selection"
+msgstr "ELM-Port-Auswahl"
+
+msgid "USB"
+msgstr "USB"
+
+msgid "WiFi"
+msgstr "WiFi"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "OBDLINK SX/EX"
+msgstr "OBDLINK SX/EX"
+
+msgid "ELS27/ELS27 V5 - May appear as FTDI/CH340/CP210x device"
+msgstr "ELS27/ELS27 V5 - Kann als FTDI/CH340/CP210x Gerät erscheinen"
+
+msgid "Vlinker FS/MC"
+msgstr "Vlinker FS/MC"
+
+msgid "DERLEK USB-DIAG2/3"
+msgstr "DERLEK USB-DIAG2/3"
+
+msgid "VGate (High-Speed)"
+msgstr "VGate (Hohe Geschwindigkeit)"
+
+msgid "DoIP (Diagnostics over IP)"
+msgstr "DoIP (Diagnose über IP)"
+
+msgid "Interface language"
+msgstr "Spracheinstellung"
+
+msgid "Port speed"
+msgstr "Port-Geschwindigkeit"
+
+msgid "Connected mode"
+msgstr "ELM verbinden"
+
+msgid "Edition mode"
+msgstr "Dateieditor"
+
+msgid "ELM benchmark"
+msgstr "ELM testen"
+
+msgid "WiFi port : "
+msgstr "WiFi Anschluss: "
+
+msgid "I'm aware that I can harm my car if badly used"
+msgstr "Ich bin mir bewusst, dass falsche Benutzung meinem Auto schaden kann"
+
+msgid "Enable CAN2"
+msgstr "CAN2 aktivieren"
+
+msgid "Dark style"
+msgstr "Dunkler Modus"
+
+msgid "WiFi Socket-TimeOut"
+msgstr "WiFi Socket-Timeout"
+
+msgid "Enable DoIP Scan"
+msgstr "DoIP-Scan aktivieren"
+
+msgid "DoIP (Diagnostics over IP) Configuration (Experimental)"
+msgstr "DoIP (Diagnose über IP) Konfiguration (Experimentell)"
+
+msgid "Device Preset : "
+msgstr "Geräte-Voreinstellung : "
+
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+msgid "Bosch MTS"
+msgstr "Bosch MTS"
+
+msgid "VXDIAG VCX Nano"
+msgstr "VXDIAG VCX Nano"
+
+msgid "VAG ODIS"
+msgstr "VAG ODIS"
+
+msgid "JLR DoIP VCI"
+msgstr "JLR DoIP VCI"
+
+msgid "Generic DoIP"
+msgstr "Allgemeines DoIP"
+
+msgid "DoIP Target IP : "
+msgstr "DoIP Ziel-IP : "
+
+msgid "DoIP Port : "
+msgstr "DoIP Port : "
+
+msgid "DoIP Timeout (seconds) : "
+msgstr "DoIP Zeitüberschreitung (Sekunden) : "
+
+msgid "Enable Vehicle Announcement Discovery"
+msgstr "Fahrzeug-Ankündigungs-Erkennung aktivieren"
+
+msgid "Auto-reconnect on connection loss"
+msgstr "Automatische Neuverbindung bei Verbindungsverlust"
+
+msgid "Change UART speed"
+msgstr "UART-Geschwindigkeit ändern"
+
+#, python-format
+msgid "DoIP device added to list: %(ip)s:%(port)s"
+msgstr "DoIP-Gerät zur Liste hinzugefügt: %(ip)s:%(port)s"
+
+#, python-format
+msgid "Error adding DoIP device to list: %s"
+msgstr "Fehler beim Hinzufügen des DoIP-Geräts zur Liste: %s"
+
+msgid "DoIP device removed from list"
+msgstr "DoIP-Gerät aus Liste entfernt"
+
+#, python-format
+msgid "Error removing DoIP device from list: %s"
+msgstr "Fehler beim Entfernen des DoIP-Geräts aus der Liste: %s"
+
+msgid "Checking..."
+msgstr "Überprüfe..."
+
+msgid "Please enter WiFi adapter IP address"
+msgstr "Bitte geben Sie die IP-Adresse des WiFi-Adapters ein"
+
+msgid "Invalid WiFi format. Use IP:PORT (e.g., 192.168.0.10:35000)"
+msgstr ""
+"Ungültiges WiFi-Format. Verwenden Sie IP:PORT (z.B. 192.168.0.10:35000)"
+
+msgid "Please select a serial port"
+msgstr "Bitte wählen Sie einen seriellen Port"
+
+msgid "Selected port is no longer available"
+msgstr "Der ausgewählte Port ist nicht mehr verfügbar"
+
+msgid "Attempting connection..."
+msgstr "Verbindungsversuch..."
+
+msgid "Port: "
+msgstr "Port: "
+
+msgid "Speed: "
+msgstr "Geschwindigkeit: "
+
+msgid "Connection test failed"
+msgstr "Verbindungstest fehlgeschlagen"
+
+msgid "Troubleshooting suggestions:"
+msgstr "Fehlerbehebungsvorschläge:"
+
+msgid "1. Check device is properly connected"
+msgstr "1. Überprüfen Sie, ob das Gerät ordnungsgemäß angeschlossen ist"
+
+msgid "2. Try different baud rates"
+msgstr "2. Versuchen Sie verschiedene Baudraten"
+
+msgid "3. Ensure device drivers are installed"
+msgstr "3. Stellen Sie sicher, dass die Gerätetreiber installiert sind"
+
+msgid "4. Check port permissions (Linux/macOS)"
+msgstr "4. Überprüfen Sie die Port-Berechtigungen (Linux/macOS)"
+
+msgid "Connection test successful!"
+msgstr "Verbindungstest erfolgreich!"
+
+msgid "Error during connection test: "
+msgstr "Fehler beim Verbindungstest: "
+
+msgid "Reset and Recheck"
+msgstr "Zurücksetzen und erneut prüfen"
+
+#, python-format
+msgid "Error updating port list: %s"
+msgstr "Fehler beim Aktualisieren der Portliste: %s"
+
+msgid "VGate iCar Pro selected - Enhanced STN/STPX support enabled"
+msgstr ""
+"VGate iCar Pro ausgewählt - Erweiterte STN/STPX-Unterstützung aktiviert"
+
+msgid "Long command support and high-speed communication available"
+msgstr ""
+"Lange Befehlsunterstützung und Hochgeschwindigkeitskommunikation verfügbar"
+
+#, python-format
+msgid "DoIP preset applied: %(name)s -> %(ip)s"
+msgstr "DoIP-Voreinstellung angewendet: %(name)s -> %(ip)s"
+
+#, python-format
+msgid "DoIP preset applied: %(name)s (IP unchanged)"
+msgstr "DoIP-Voreinstellung angewendet: %(name)s (IP unverändert)"
+
+#, python-format
+msgid "Error preparing DoIP update: %s"
+msgstr "Fehler bei der Vorbereitung des DoIP-Updates: %s"
+
+#, python-format
+msgid "Applied %s preset:"
+msgstr "%s Voreinstellung angewendet:"
+
+#, python-format
+msgid "  IP: %s"
+msgstr "  IP: %s"
+
+#, python-format
+msgid "  Port: %s"
+msgstr "  Port: %s"
+
+#, python-format
+msgid "  Timeout: %ss"
+msgstr "  Timeout: %ss"
+
+msgid "  Configuration saved and device list reloaded"
+msgstr "  Konfiguration gespeichert und Geräteliste neu geladen"
+
+#, python-format
+msgid "Error in force DoIP update: %s"
+msgstr "Fehler bei erzwungenem DoIP-Update: %s"
+
+#, python-format
+msgid "Error in delayed DoIP update: %s"
+msgstr "Fehler bei verzögertem DoIP-Update: %s"
+
+#, python-format
+msgid "DoIP device updated: %(ip)s:%(port)s"
+msgstr "DoIP-Gerät aktualisiert: %(ip)s:%(port)s"
+
+msgid "DoIP device removed from list (scan disabled)"
+msgstr "DoIP-Gerät aus Liste entfernt (Scan deaktiviert)"
+
+#, python-format
+msgid "Error in targeted DoIP update: %s"
+msgstr "Fehler bei gezieltem DoIP-Update: %s"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "DoIP (Diagnostics over IP) selected"
+msgstr "DoIP (Diagnose über IP) ausgewählt"
+
+msgid "Ethernet-based diagnostic communication"
+msgstr "Ethernet-basierte Diagnosekommunikation"
+
+msgid "Compatible with Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
+msgstr "Kompatibel mit Bosch MTS, VXDIAG, VAG ODIS, JLR DoIP VCI"
+
+msgid "You must check the recommandations"
+msgstr "Sie müssen die Empfehlungen überprüfen"
+
+msgid "Please select a communication port"
+msgstr "Bitte wählen Sie einen Anschluss aus"
+
+msgid "ECU Command"
+msgstr "ECU-Befehl"
+
+msgid "Start diagnostic session"
+msgstr "Diagnosesitzung"
+
+msgid "Request"
+msgstr "Anfragen"
+
+msgid "Data to send"
+msgstr "Datentyp"
+
+msgid "Computed ISOTP Frame"
+msgstr "Berechneter ISOTP-Rahmen"
+
+msgid "Compute frame"
+msgstr "Rahmen berechnen"
+
+msgid "Data received"
+msgstr "Daten empfangen"
+
+msgid "Execute"
+msgstr "Ausführen"
+
+msgid ""
+"<center>This feature is experimental</center>\n"
+"<center>Use it at your own risk</center>\n"
+"<center>and if you know exactely what you do</center>\n"
+msgstr ""
+"<center>Diese Funktion ist experimentell</center>\n"
+"<center>Benutzung auf eigene Gefahr</center>\n"
+"<center>und wenn Sie genau wissen, was Sie tun</center>\n"
+
+msgid "Err, cannot rename "
+msgstr "Fehler, kann nicht umbenennen "
+
+msgid "To be able to edit your screen, first export it in JSON format"
+msgstr ""
+"Um Ihren Bildschirm bearbeiten zu können, exportieren Sie ihn zuerst im JSON-"
+"Format"
+
+msgid "Enter label name"
+msgstr "Schriftfeldname eingeben"
+
+msgid "Add button"
+msgstr "Schaltfläche hinzufügen"
+
+msgid "Add label"
+msgstr "Schriftfeld hinzufügen"
+
+msgid "Rename label"
+msgstr "Schriftfeld umbenennen"
+
+msgid "Change color"
+msgstr "Farbe ändern"
+
+msgid "Remove element"
+msgstr "Element entfernen"
+
+msgid "Diagnotic session"
+msgstr "Diagnosesitzung"
+
+msgid "Input"
+msgstr "Eingabe"
+
+msgid "Output"
+msgstr "Ausgabe"
+
+msgid "Protocol not supported"
+msgstr "Protokoll nicht unterstützt"
+
+msgid "Protocol not supported: "
+msgstr "Protokoll nicht unterstützt: "
+
+msgid "XML file not found : "
+msgstr "XML Datei nicht gefunden: "
+
+msgid "Invalid DDT file"
+msgstr "Ungueltige ECU Datei"
+
+msgid "Connection to ELM lost, trying to reconnect..."
+msgstr "Verbindung zu ELM verloren, versuche erneute Verbindung..."
+
+msgid "Cannot reconnect..."
+msgstr "Kann Verbindung nicht wiederherstellen..."
+
+msgid "Switching to session mode"
+msgstr "Wechsle zum Sitzungsmodus"
+
+msgid "Sending ELM request :"
+msgstr "ELM Anfrage senden:"
+
+msgid "Blocked ELM request :"
+msgstr "ELM Anfrage gesperrt:"
+
+msgid "Sending ELM request:"
+msgstr "ELM Anfrage senden:"
+
+msgid "Sending simulated ELM request :"
+msgstr "ELM Anfrage simuliert senden:"
+
+msgid "Bad ELM response :"
+msgstr "Schlechte ELM Antwort :"
+
+msgid "ELM response : "
+msgstr "ELM antwortet: "
+
+msgid "Button request not found : "
+msgstr "Schaltfläche nicht gefunden: "
+
+msgid "Sending request :"
+msgstr "Anfrage senden:"
+
+msgid "Unknown request "
+msgstr "Unbekannte Anfrage "
+
+msgid "Command aborted "
+msgstr "Befehl abgebrochen "
+
+msgid "Value error of this stuff need a bypass gateway maybe."
+msgstr ""
+"Wertefehler dieser Sachen benötigt möglicherweise einen Bypass-Gateway."
+
+msgid "Request aborted (look at red paramters entries): "
+msgstr "Anfrage abgebrochen (siehe rote Parametereinträge): "
+
+msgid "Delay"
+msgstr "Verzögerung"
+
+msgid "For your safety"
+msgstr "Für Ihre Sicherheit"
+
+msgid ""
+"<center>BLOCKED COMMAND</center>\n"
+"Activate expert mode to unlock"
+msgstr ""
+"<center>GEBLOCKTE BEFEHLE</center>\n"
+"Expertenmodus aktivieren zum Entsperren"
+
+msgid "Writing parameter"
+msgstr "Schreibe Parameter"
+
+msgid "Blocked writing parameter"
+msgstr "Parameter schreiben blockiert"
+
+msgid "Invalid"
+msgstr "Ungültig"
+
+msgid "ECU uses SDS "
+msgstr "ECU verwendet SDS "
+
+msgid "Cannot call request "
+msgstr "Anfrage nicht möglich "
+
+msgid "Update time"
+msgstr "Zeit aktualisieren"
+
+msgid "Clearing DTC information"
+msgstr "DTC-Informationen löschen"
+
+msgid "No ClearDTC request for that ECU, will send default 14FF00"
+msgstr "Kein ClearDTC für diese ECU, sende Standard 14FF00"
+
+msgid "<center>You are about to clear diagnostic troubles codes</center>"
+msgstr "<center>Sie sind dabei die Fehlercodes zu löschen</center>"
+
+msgid "<center>Ae you sure this is what you want.</center>"
+msgstr "<center>Sind Sie sicher, dass Sie das tun möchten?</center>"
+
+msgid "Clear DTC failed"
+msgstr "DTC-Löschen fehlgeschlagen"
+
+msgid "Clear DTC successfully done"
+msgstr "DTC erfolgreich gelöscht"
+
+msgid "No ReadDTC request for that ECU"
+msgstr "Keine ReadDTC-Anfrage für dieses ECU"
+
+msgid "Invalid response for ReadDTC command"
+msgstr "Ungültige Antwort des DTC-Befehls"
+
+msgid "Read DTC returned an error"
+msgstr "DTC Lesen gab einen Fehler zurück"
+
+msgid "No DTC"
+msgstr "Kein DTC"
+
+msgid "Invalid DTC response: "
+msgstr "Ungültige DTC-Antwort: "
+
+msgid "DTC parsing error - response: "
+msgstr "DTC-Parsingfehler - Antwort: "
+
+msgid "Diagnostic Trouble Codes"
+msgstr "Diagnose-Fehlercodes"
+
+msgid "Clear ALL DTC"
+msgstr "Alle Fehler löschen"
+
+msgid "ECU trouble codes"
+msgstr "ECU-Fehlercodes"
+
+msgid "Parsing screen "
+msgstr "Bildschirm verarbeiten "
+
+msgid "found request in input "
+msgstr "Anfrage in Eingabe gefunden "
+
+msgid "found in display "
+msgstr "in Anzeige gefunden "
+
+msgid "found in button "
+msgstr "in Button gefunden "
+
+msgid "found in presend "
+msgstr "in Vorschau gefunden "
+
+msgid "found data in input "
+msgstr "Daten in Eingabe gefunden "
+
+msgid "found data in display "
+msgstr "Daten in Anzeige gefunden "
+
+msgid "Waiting..."
+msgstr "Warte..."
+
+msgid "Frame length error: "
+msgstr "Fehler bei Rahmenlänge: "
+
+msgid "Frame hex error: "
+msgstr "Hex-Fehler bei Rahmen: "

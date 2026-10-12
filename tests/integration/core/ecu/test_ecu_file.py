@@ -1,8 +1,8 @@
 import json
 
-import ddt4all.options as options
-_ = options.translator('ddt4all')
-from ddt4all.core.ecu.ecu_file import EcuFile
+import obd_v2.options as options
+_ = options.translator('obd_v2')
+from obd_v2.core.ecu.ecu_file import EcuFile
 
 
 
@@ -232,7 +232,7 @@ def test_ecu_file_connect_to_hardware(dummy_ecu_file, mocker):
     mocker.patch.object(options, "simulation_mode", False)
     mocker.patch.object(options, "elm", mock_elm)
     mocker.patch(
-        "ddt4all.core.ecu.ecu_file.elm.get_can_addr",
+        "obd_v2.core.ecu.ecu_file.elm.get_can_addr",
         return_value="26",
     )
 
@@ -307,7 +307,7 @@ def test_ecu_file_connect_to_hardware_can_address_not_found_returns_false(dummy_
     mocker.patch.object(options, "simulation_mode", False)
     mocker.patch.object(options, "elm", mock_elm)
     mocker.patch(
-        "ddt4all.core.ecu.ecu_file.elm.get_can_addr",
+        "obd_v2.core.ecu.ecu_file.elm.get_can_addr",
         return_value=None,
     )
 
@@ -322,9 +322,9 @@ def test_ecu_file_connect_to_hardware_extended_can_uses_get_can_addr_ext(mocker,
 
     ecu = EcuFile(str(dummy_ecu_file(protocol="can_ext", type="xml")), isfile=True)
     mock_elm = mocker.Mock()
-    get_can_addr = mocker.patch("ddt4all.core.ecu.ecu_file.elm.get_can_addr")
+    get_can_addr = mocker.patch("obd_v2.core.ecu.ecu_file.elm.get_can_addr")
     get_can_addr_ext = mocker.patch(
-        "ddt4all.core.ecu.ecu_file.elm.get_can_addr_ext",
+        "obd_v2.core.ecu.ecu_file.elm.get_can_addr_ext",
         return_value="AB",
     )
 

@@ -1,4 +1,4 @@
-name: DDT4ALL APP
+name: OBD-V2 APP
 
 on:
   push:
@@ -42,7 +42,7 @@ jobs:
         env:
           QT_QPA_PLATFORM: offscreen
         run: |
-          xvfb-run -a pytest --cov=ddt4all --cov-report=term-missing --cov-report=xml
+          xvfb-run -a pytest --cov=obd_v2 --cov-report=term-missing --cov-report=xml
 
       # Run tests on macOS and Windows
       - name: Run tests with coverage (macOS / Windows)
@@ -50,7 +50,7 @@ jobs:
         env:
           QT_QPA_PLATFORM: offscreen
         run: |
-          pytest --cov=ddt4all --cov-report=term-missing --cov-report=xml
+          pytest --cov=obd_v2 --cov-report=term-missing --cov-report=xml
 
       # Optional: upload coverage
       # - name: Upload coverage to Codecov

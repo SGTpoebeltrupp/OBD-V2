@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# DDT4ALL macOS DMG Build Script
+# OBD-V2 macOS DMG Build Script
 # Creates a distributable DMG file for macOS
 
 set -e  # Exit on any error
@@ -59,16 +59,16 @@ print_status "Cleaning previous builds..."
 rm -rf build/ dist/ *.spec.bak
 
 # Build the application
-print_status "Building DDT4ALL.app with PyInstaller..."
+print_status "Building OBD-V2.app with PyInstaller..."
 pyinstaller --noconfirm main.spec
 
 # Verify the build was successful
-if [ ! -d "dist/DDT4ALL.app" ]; then
-    print_error "PyInstaller build failed. DDT4ALL.app not found in dist/"
+if [ ! -d "dist/OBD-V2.app" ]; then
+    print_error "PyInstaller build failed. OBD-V2.app not found in dist/"
     exit 1
 fi
 
-print_status "Build successful. App size: $(du -sh dist/DDT4ALL.app | cut -f1)"
+print_status "Build successful. App size: $(du -sh dist/OBD-V2.app | cut -f1)"
 
 # Create DMG preparation directory
 print_status "Preparing DMG creation..."
@@ -80,45 +80,45 @@ if [ -d "dist/dmg" ] && [ "$(ls -A dist/dmg)" ]; then
 fi
 
 # Copy the app bundle to the dmg folder
-cp -r "dist/DDT4ALL.app" dist/dmg/
+cp -r "dist/OBD-V2.app" dist/dmg/
 
 # Remove any existing DMG
-if [ -f "dist/DDT4ALL.dmg" ]; then
-    print_warning "Removing existing DDT4ALL.dmg"
-    rm "dist/DDT4ALL.dmg"
+if [ -f "dist/OBD-V2.dmg" ]; then
+    print_warning "Removing existing OBD-V2.dmg"
+    rm "dist/OBD-V2.dmg"
 fi
 
 # Create the DMG
 print_status "Creating DMG..."
 create-dmg \
-  --volname "DDT4ALL" \
+  --volname "OBD-V2" \
   --volicon "../../resources/icons/obd.icns" \
   --window-pos 200 120 \
   --window-size 600 300 \
   --icon-size 100 \
   --no-internet-enable \
-  --icon "DDT4ALL.app" 175 120 \
-  --hide-extension "DDT4ALL.app" \
+  --icon "OBD-V2.app" 175 120 \
+  --hide-extension "OBD-V2.app" \
   --eula "../../license.txt" \
   --app-drop-link 425 120 \
   --hdiutil-verbose \
-  "dist/DDT4ALL.dmg" \
+  "dist/OBD-V2.dmg" \
   "dist/dmg/"
 
 # Verify DMG creation
-if [ -f "dist/DDT4ALL.dmg" ]; then
-    dmg_size=$(du -sh dist/DDT4ALL.dmg | cut -f1)
-    print_status "DMG created successfully: dist/DDT4ALL.dmg (${dmg_size})"
+if [ -f "dist/OBD-V2.dmg" ]; then
+    dmg_size=$(du -sh dist/OBD-V2.dmg | cut -f1)
+    print_status "DMG created successfully: dist/OBD-V2.dmg (${dmg_size})"
     
     # Optional: Verify DMG can be mounted
     print_status "Verifying DMG integrity..."
-    if hdiutil verify "dist/DDT4ALL.dmg" > /dev/null 2>&1; then
+    if hdiutil verify "dist/OBD-V2.dmg" > /dev/null 2>&1; then
         print_status "DMG verification passed"
     else
         print_warning "DMG verification failed, but file was created"
     fi
     
-    print_status "Build complete! You can find the installer at: $(pwd)/dist/DDT4ALL.dmg"
+    print_status "Build complete! You can find the installer at: $(pwd)/dist/OBD-V2.dmg"
 else
     print_error "DMG creation failed"
     exit 1
@@ -127,10 +127,10 @@ fi
 # Optional: Code signing information
 if [ -n "$CODESIGN_IDENTITY" ]; then
     print_status "Code signing with identity: $CODESIGN_IDENTITY"
-    codesign --force --verify --verbose --sign "$CODESIGN_IDENTITY" "dist/DDT4ALL.app"
+    codesign --force --verify --verbose --sign "$CODESIGN_IDENTITY" "dist/OBD-V2.app"
     
     # Verify code signature
-    if codesign --verify --verbose "dist/DDT4ALL.app"; then
+    if codesign --verify --verbose "dist/OBD-V2.app"; then
         print_status "Code signing successful"
     else
         print_error "Code signing failed"
@@ -140,7 +140,7 @@ if [ -n "$CODESIGN_IDENTITY" ]; then
     # Optional: Notarization (requires Apple Developer account)
     if [ -n "$NOTARIZE_USERNAME" ] && [ -n "$NOTARIZE_PASSWORD" ]; then
         print_status "Submitting for notarization..."
-        xcrun notarytool submit "dist/DDT4ALL.dmg" \
+        xcrun notarytool submit "dist/OBD-V2.dmg" \
             --apple-id "$NOTARIZE_USERNAME" \
             --password "$NOTARIZE_PASSWORD" \
             --team-id "$TEAM_ID" \

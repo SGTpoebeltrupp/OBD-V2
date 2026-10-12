@@ -1,12 +1,12 @@
 import pytest
 
-from ddt4all.cli.cli_args_parser import build_parser
-from ddt4all.cli.cmd_handlers.doip import cmd_doip
-from ddt4all.cli.cmd_handlers.parameters import cmd_parameters
-from ddt4all.cli.cmd_handlers.usbdevice import cmd_usbdevice
+from obd_v2.cli.cli_args_parser import build_parser
+from obd_v2.cli.cmd_handlers.doip import cmd_doip
+from obd_v2.cli.cmd_handlers.parameters import cmd_parameters
+from obd_v2.cli.cmd_handlers.usbdevice import cmd_usbdevice
 
-import ddt4all.options as options
-_ = options.translator('ddt4all')
+import obd_v2.options as options
+_ = options.translator('obd_v2')
 
 
 def test_parse_without_subcommand():

@@ -22,10 +22,10 @@ import tempfile
 import fnmatch
 
 # Defaults
-DEFAULT_DOMAIN = "ddt4all"
+DEFAULT_DOMAIN = "obd_v2"
 DEFAULT_LOCALEDIR = "locales"
 DEFAULT_SCAN_ROOT = "src"
-DEFAULT_GENERATEDDIR = "src/ddt4all/generated/locales"
+DEFAULT_GENERATEDDIR = "src/obd_v2/generated/locales"
 DEFAULT_EXCLUDES = [
     ".git", "venv", "env", "build", "dist", "__pycache__", ".tox", ".eggs", "generated"
 ]

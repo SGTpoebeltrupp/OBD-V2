@@ -1,16 +1,16 @@
 import pytest
 import argparse
 
-from ddt4all.cli.cli_args_parser import build_parser
-from ddt4all.cli.cmd_handlers.doip import cmd_doip
+from obd_v2.cli.cli_args_parser import build_parser
+from obd_v2.cli.cmd_handlers.doip import cmd_doip
 
-import ddt4all.options as options
-_ = options.translator('ddt4all')
+import obd_v2.options as options
+_ = options.translator('obd_v2')
 
 
 def test_cmd_doip_success_flow(mocker, capsys):
     mock_doip_device_class = mocker.patch(
-        "ddt4all.cli.cmd_handlers.doip.DoIPDevice"
+        "obd_v2.cli.cmd_handlers.doip.DoIPDevice"
     )
     mock_doip_device = mock_doip_device_class.return_value
 
@@ -41,7 +41,7 @@ def test_cmd_doip_success_flow(mocker, capsys):
 
 def test_cmd_doip_connect_failure(mocker, capsys):
     mock_doip_device_class = mocker.patch(
-        "ddt4all.cli.cmd_handlers.doip.DoIPDevice"
+        "obd_v2.cli.cmd_handlers.doip.DoIPDevice"
     )
     mock_doip_device = mock_doip_device_class.return_value
 
@@ -63,7 +63,7 @@ def test_cmd_doip_connect_failure(mocker, capsys):
 
 def test_cmd_doip_first_request_failure_does_not_stop_ecu_loop(mocker, capsys):
     mock_doip_device_class = mocker.patch(
-        "ddt4all.cli.cmd_handlers.doip.DoIPDevice"
+        "obd_v2.cli.cmd_handlers.doip.DoIPDevice"
     )
     mock_doip_device = mock_doip_device_class.return_value
 

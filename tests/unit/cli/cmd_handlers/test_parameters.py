@@ -1,22 +1,22 @@
 import pytest
 import argparse
 
-from ddt4all.cli.cli_args_parser import build_parser
-from ddt4all.cli.cmd_handlers.parameters import cmd_parameters
+from obd_v2.cli.cli_args_parser import build_parser
+from obd_v2.cli.cmd_handlers.parameters import cmd_parameters
 
-import ddt4all.options as options
-_ = options.translator('ddt4all')
+import obd_v2.options as options
+_ = options.translator('obd_v2')
 
 
 def test_cmd_parameters_no_flags_calls_nothing(mocker):
     mock_zip = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.zipConvertXML"
+        "obd_v2.cli.cmd_handlers.parameters.zipConvertXML"
     )
     mock_convert = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.convertXML"
+        "obd_v2.cli.cmd_handlers.parameters.convertXML"
     )
     mock_dump = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.dumpVehicles"
+        "obd_v2.cli.cmd_handlers.parameters.dumpVehicles"
     )
 
     args = argparse.Namespace(
@@ -36,13 +36,13 @@ def test_cmd_parameters_no_flags_calls_nothing(mocker):
 
 def test_cmd_parameters_zipconvert_only(mocker):
     mock_zip = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.zipConvertXML"
+        "obd_v2.cli.cmd_handlers.parameters.zipConvertXML"
     )
     mock_convert = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.convertXML"
+        "obd_v2.cli.cmd_handlers.parameters.convertXML"
     )
     mock_dump = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.dumpVehicles"
+        "obd_v2.cli.cmd_handlers.parameters.dumpVehicles"
     )
 
     args = argparse.Namespace(
@@ -60,13 +60,13 @@ def test_cmd_parameters_zipconvert_only(mocker):
 
 def test_cmd_parameters_convert_only(mocker):
     mock_zip = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.zipConvertXML"
+        "obd_v2.cli.cmd_handlers.parameters.zipConvertXML"
     )
     mock_convert = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.convertXML"
+        "obd_v2.cli.cmd_handlers.parameters.convertXML"
     )
     mock_dump = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.dumpVehicles"
+        "obd_v2.cli.cmd_handlers.parameters.dumpVehicles"
     )
 
     args = argparse.Namespace(
@@ -84,13 +84,13 @@ def test_cmd_parameters_convert_only(mocker):
 
 def test_cmd_parameters_dumpprojects_only(mocker):
     mock_zip = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.zipConvertXML"
+        "obd_v2.cli.cmd_handlers.parameters.zipConvertXML"
     )
     mock_convert = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.convertXML"
+        "obd_v2.cli.cmd_handlers.parameters.convertXML"
     )
     mock_dump = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.dumpVehicles"
+        "obd_v2.cli.cmd_handlers.parameters.dumpVehicles"
     )
 
     args = argparse.Namespace(
@@ -108,13 +108,13 @@ def test_cmd_parameters_dumpprojects_only(mocker):
 
 def test_cmd_parameters_all_flags(mocker):
     mock_zip = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.zipConvertXML"
+        "obd_v2.cli.cmd_handlers.parameters.zipConvertXML"
     )
     mock_convert = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.convertXML"
+        "obd_v2.cli.cmd_handlers.parameters.convertXML"
     )
     mock_dump = mocker.patch(
-        "ddt4all.cli.cmd_handlers.parameters.dumpVehicles"
+        "obd_v2.cli.cmd_handlers.parameters.dumpVehicles"
     )
 
     args = argparse.Namespace(

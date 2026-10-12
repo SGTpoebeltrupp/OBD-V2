@@ -1,18 +1,15 @@
-# DDT4ALL
+# OBD-V2
 
-[![Build](https://github.com/cedricp/ddt4all/actions/workflows/python-app.yml/badge.svg)](https://github.com/cedricp/ddt4all/actions/workflows/python-app.yml)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=cedricpaille%40gmail.com&item_name=codetronic&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
-[![Sponsor](https://img.shields.io/badge/💖%20Sponsor-Support%20me-ea4aaa)](https://github.com/sponsors/Furtif)
-[![Discord](https://img.shields.io/discord/1117970325267820675?label=Discord&style=flat-square)](https://discord.gg/cBqDh9bTHP)
+[![Build](https://github.com/sgtpoebeltrupp/obd-v2/actions/workflows/python-app.yml/badge.svg)](https://github.com/sgtpoebeltrupp/obd-v2/actions/workflows/python-app.yml)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-GPL%203.0-green.svg)](https://opensource.org/licenses/GPL-3.0)
 
-DDT4ALL is a cross-platform diagnostic application for CAN bus vehicle networks.
+OBD-V2 is a cross-platform diagnostic application for CAN bus vehicle networks.
 It lets you **create your own ECU parameter screens** and **communicate with ECUs**
 through various OBD-II interfaces, including ELM327, Vlinker FS, VGate iCar Pro,
 OBDLink SX/EX and ELS27 adapters.
 
-- **Current version:** `v3.1.3` (Celestial Nemean)
+- **Current version:** `v3.1.3`
 - **License:** [GPL-3.0-or-later](https://opensource.org/licenses/GPL-3.0)
 
 ---
@@ -69,7 +66,7 @@ OBDLink SX/EX and ELS27 adapters.
 ## Language support
 
 gettext catalogs are authored under `locales/` and compiled into
-`src/ddt4all/generated/locales/`. English is the source language (used as `msgid`);
+`src/obd_v2/generated/locales/`. English is the source language (used as `msgid`);
 the following catalogues are shipped:
 
 | Code | Language |
@@ -111,8 +108,8 @@ and no `#, fuzzy` remains), keep valid gettext syntax and preserve the original
 ### Modern (recommended)
 
 ```bash
-git clone https://github.com/cedricp/ddt4all.git
-cd ddt4all
+git clone https://github.com/sgtpoebeltrupp/obd-v2.git
+cd obd_v2
 python -m venv ./venv
 
 # activate virtual environment
@@ -125,9 +122,9 @@ source ./venv/bin/activate
 pip install -e .
 
 # launch application
-ddt4all
+obd_v2
 # or
-python -m ddt4all
+python -m obd_v2
 ```
 
 ### With optional features
@@ -174,27 +171,27 @@ pip install "PyQt5>=5.15,<5.16" "PyQtWebEngine>=5.15,<5.16" pyserial==3.5 pyusb=
 
 ```bash
 # after a successful install
-ddt4all
+obd_v2
 #   or, from source (development mode):
-python -m ddt4all
+python -m obd_v2
 ```
 
-Use the built-in **connection test** to let DDT4ALL auto-detect the adapter and the
+Use the built-in **connection test** to let OBD-V2 auto-detect the adapter and the
 correct baud rate. On discovery, the optimal device configuration is applied.
 
 ### Shortcut / alias (optional)
 
 ```bash
 # Linux / macOS
-alias ddt4all-dev='cd /path/to/ddt4all && source ./venv/bin/activate && python -m ddt4all'
+alias obd_v2-dev='cd /path/to/obd_v2 && source ./venv/bin/activate && python -m obd_v2'
 # Windows (PowerShell)
-Set-Alias -Name ddt4all -Value "ddt4all"
+Set-Alias -Name obd_v2 -Value "obd_v2"
 ```
 
 ## Plugin system
 
 Vehicle-specific procedures are provided as Python modules under
-`src/ddt4all/plugins/`:
+`src/obd_v2/plugins/`:
 
 - `ab90_reset.py` — AB90 air-bag reset
 - `card_programming.py` — ECU card programming
@@ -215,11 +212,11 @@ The plugin architecture allows custom procedures for other ECUs and brands.
 
 ### Core modules
 
-- `src/ddt4all/main.py` — entry point (PyQt GUI + connection handling)
-- `src/ddt4all/version.py` — version / codename / contributors
-- `src/ddt4all/options.py` — configuration & device settings persistence
-- `src/ddt4all/file_manager.py` — file and directory utilities
-- `src/ddt4all/cli/` — command-line interface handlers (DoIP, parameters, USB device)
+- `src/obd_v2/main.py` — entry point (PyQt GUI + connection handling)
+- `src/obd_v2/version.py` — version / codename / contributors
+- `src/obd_v2/options.py` — configuration & device settings persistence
+- `src/obd_v2/file_manager.py` — file and directory utilities
+- `src/obd_v2/cli/` — command-line interface handlers (DoIP, parameters, USB device)
 
 ### Communication
 
@@ -273,7 +270,7 @@ workflow (`python-app.yml`) runs the test suite on multiple OSes.
   `entitlements.plist`).
 - **Linux**: AppImage build scripts / workflow (see `setup_tools/`).
 
-Prebuilt installers are published on the [Releases page](https://github.com/cedricp/ddt4all/releases).
+Prebuilt installers are published on the [Releases page](https://github.com/sgtpoebeltrupp/obd-v2/releases).
 
 ---
 
@@ -291,33 +288,29 @@ Prebuilt installers are published on the [Releases page](https://github.com/cedr
 
 ### Installation
 
-- **PyQtWebEngine missing** — DDT4All still works; only the full web-based
+- **PyQtWebEngine missing** — OBD-V2 still works; only the full web-based
   documentation view is limited (graceful fallback).
 - **Windows serial fails** — reinstall `pywin32` and run
   `python -m pywin32_postinstall -install`, ideally with admin rights.
 
-## Documentation & videos
+## Documentation
 
-See the project [Wiki](https://github.com/cedricp/ddt4all/wiki) (Android port,
-device notes) and the YouTube channel (CAN sniffing, AirBag DTC, Megane examples).
+See the [`documentation/`](documentation/) folder.
 
 ## Community
 
-- **Discord**: [Join the community](https://discord.gg/cBqDh9bTHP)
-- **Issues**: [GitHub Issues](https://github.com/cedricp/ddt4all/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/cedricp/ddt4all/discussions)
+- **Issues**: [GitHub Issues](https://github.com/sgtpoebeltrupp/obd-v2/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/sgtpoebeltrupp/obd-v2/discussions)
 
 ## Contributing
 
 - **Report bugs** — add a screenshot, your `Logs/` file, `[Bug]` in the title, OS + Python + adapter info.
 - **Suggestions / ideas** — open a discussion with `[Suggestion]` in the title.
 - **Translations** — improve or add language catalogs under `locales/`.
-- **Donations** — financial (PayPal / GitHub Sponsors) and hardware donations
-  (OBD-II interfaces, ECU devices) are welcome to extend device support.
 
 ## License & disclaimer
 
-This project is **free software** under the **GPL-3.0-or-later** license. DDT4ALL is
+This project is **free software** under the **GPL-3.0-or-later** license. OBD-V2 is
 an independent, unofficial, educational tool and is *not* affiliated with any
 vehicle/software brand. It is provided for study, testing and research only; it is
 not a replacement for factory/bench diagnostic tools. Use on a real vehicle is at
